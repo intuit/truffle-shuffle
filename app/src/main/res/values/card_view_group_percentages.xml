@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="WidthPercentage" format="float" type="integer">0.89</item>
+    <item name="DashboardCardHeightPercentage" format="float" type="integer">0.21</item>
+    <item name="TopSpacingPercentage" format="float" type="integer">0.05</item>
+    <item name="BottomSpacingPercentage" format="float" type="integer">0.05</item>
+</resources>

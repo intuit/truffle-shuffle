@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_stack_padding">2dp</dimen>
+    <dimen name="card_stack_bottom_height">30dp</dimen>
+    <dimen name="card_stack_height">7dp</dimen>
+    <dimen name="card_stack_top_margin">22dp</dimen>
+
+</resources>

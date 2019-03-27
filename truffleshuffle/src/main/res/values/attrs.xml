@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CardViewGroup">
+        <attr name="widthPercentage" format="float" />
+        <attr name="dashboardCardHeightPercentage" format="float" />
+        <attr name="topSpacingPercentage" format="float" />
+        <attr name="bottomSpacingPercentage" format="float" />
+    </declare-styleable>
+</resources>

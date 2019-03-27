@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="WidthPercentage" format="float" type="integer">0.95</item>
+</resources>
