@@ -17,6 +17,7 @@ Truffle Shuffle is a library of an Android UI component of a card gallery with a
     <img src=".github/textcardswithtitle.gif" width="300" alt="Text content with titles video"/>
     
 </p>
+</div>
 
 # Quick Start
 
