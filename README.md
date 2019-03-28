@@ -30,7 +30,20 @@ You can play with the example by
 # Using Truffle Shuffle
 
 To add this to your own Android application, complete the following steps:
-1. Add the dependency to your gradle file by following the directions on Jitpack: https://jitpack.io/
+
+1. Add the dependency to your project's build.gradle file under dependencies:
+```
+dependencies {
+    implementation 'com.intuit.truffleshuffle:truffleshuffle:X.X.X'
+}
+```
+And make sure jcenter() is added to your app build.gradle
+```
+repositories {
+    jcenter()
+}
+```
+
 2. Add the com.intuit.truffleshuffle.CardViewGroup to the xml file where you want the card gallery, like in app/src/main/res/layout/activity_main.xml
     - add the percentages you want to the custom attributes of the CardViewGroup in the xml file
         - custom:dashboardCardHeightPercentage, custom:widthPercentage, custom:topSpacingPercentage, custom:bottomSpacingPercentage
