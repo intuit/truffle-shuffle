@@ -34,7 +34,7 @@ To add this to your own Android application, complete the following steps:
 1. Add the dependency to your project's build.gradle file under dependencies:
 ```
 dependencies {
-    implementation 'com.intuit.truffleshuffle:truffleshuffle:X.X.X'
+    implementation 'com.intuit.truffleshuffle:truffleshuffle:1.0.0'
 }
 ```
 And make sure jcenter() is added to your app build.gradle
