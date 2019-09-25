@@ -10,7 +10,7 @@ import java.util.ArrayList
  * The custom adapter for mapping the data in the CardContent object to the specific view
  * Created by Katie Levy
  */
-class CustomizeAdapter(cardDetails: ArrayList<CardContent>,
+class CustomizeAdapter(cardDetails: ArrayList<CardContent> as ArrayList,
                        mContext: Context, layout: Int)
     : com.intuit.truffleshuffle.CardContentAdapter<CardContent>(cardDetails, mContext, layout) {
 
