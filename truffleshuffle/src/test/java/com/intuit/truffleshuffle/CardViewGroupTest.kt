@@ -49,7 +49,6 @@ class CardViewGroupTest {
         assertEquals(expectedCardMeasurements, cardMeasurements)
     }
 
-
     @Test
     fun getDetailCardMeasurementsTest() {
         val cardMeasurements = cardGroup.getDetailCardMeasurements()
@@ -76,7 +75,6 @@ class CardViewGroupTest {
                 com.intuit.truffleshuffle.CardMeasurements(1700, 900, 0)
         )
         assertArrayEquals(expectedCards, cardGroup.cards)
-
     }
 
     @Test
@@ -91,7 +89,6 @@ class CardViewGroupTest {
                 com.intuit.truffleshuffle.CardMeasurements(1513, 900, 357)
         )
         assertArrayEquals(expectedCards, cardGroup.cards)
-
     }
 
     @Test

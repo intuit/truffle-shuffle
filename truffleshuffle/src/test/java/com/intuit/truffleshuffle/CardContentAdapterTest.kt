@@ -5,8 +5,9 @@ import android.view.LayoutInflater
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import com.nhaarman.mockitokotlin2.whenever
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertNull
 import org.junit.Test
-import org.junit.Assert.*
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 
@@ -43,6 +44,4 @@ class CardContentAdapterTest {
         assertEquals(0, cardContentAdapter.count)
         assertNull(cardContentAdapter.getItem(0))
     }
-
 }
-

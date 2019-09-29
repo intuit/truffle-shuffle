@@ -8,8 +8,11 @@ import android.view.View
  */
 class CardContent
 
-class CustomizeAdapter(cardDetails: java.util.ArrayList<CardContent>,
-                       mContext: Context, layout: Int)
+class CustomizeAdapter(
+    cardDetails: java.util.ArrayList<CardContent>,
+    mContext: Context,
+    layout: Int
+)
     : com.intuit.truffleshuffle.CardContentAdapter<CardContent>(cardDetails, mContext, layout) {
     override fun getViewContent(view: View, cardContent: CardContent) {
         // Do nothing
