@@ -6,7 +6,6 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-
 import java.util.ArrayList
 
 /**
@@ -14,8 +13,11 @@ import java.util.ArrayList
  * Note that the array of contents is generic.
  * Created by Katie Levy
  */
-abstract class CardContentAdapter<T : Any?>(private val cardContentArray: ArrayList<T>,
-                                            mContext: Context, private val layout: Int) : BaseAdapter() {
+abstract class CardContentAdapter<T : Any?>(
+    private val cardContentArray: ArrayList<T>,
+    mContext: Context,
+    private val layout: Int
+) : BaseAdapter() {
     private val layoutInflater: LayoutInflater = LayoutInflater.from(mContext)
 
     /**

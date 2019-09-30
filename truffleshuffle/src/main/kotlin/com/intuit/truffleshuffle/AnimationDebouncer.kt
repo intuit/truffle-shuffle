@@ -34,5 +34,4 @@ class AnimationDebouncer {
         animator.addListener(endAnimationListener)
         animator.start()
     }
-
 }

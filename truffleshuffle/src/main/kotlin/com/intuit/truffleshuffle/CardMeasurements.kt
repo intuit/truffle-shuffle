@@ -69,5 +69,3 @@ data class CardMeasurements(var yValue: Int = 0, var width: Int = 0, var height:
      */
     enum class CardDimension { YVALUE, HEIGHT, WIDTH }
 }
-
-

@@ -236,7 +236,7 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
             var stackTop = calculateStackTop()
             var stackPosition = cards.size - 2
 
-            cards.foldIndexed(animator){ index, acc, cardLayoutSpecs ->
+            cards.foldIndexed(animator) { index, acc, cardLayoutSpecs ->
                 val animation = if (index == selectedCard) {
                     cardLayoutSpecs.getTransitionAnimator(calculateTopOfCards(), getDetailCardHeight(), getChildWidth(), this)
                 } else {
@@ -258,7 +258,7 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
         }
     }
 
-    private fun galleryStateAnimator(desiredGalleryState : GalleryState): AnimatorSet =
+    private fun galleryStateAnimator(desiredGalleryState: GalleryState): AnimatorSet =
         AnimatorSet().also {
             it.addListener(object : AnimatorListenerAdapter() {
                 override fun onAnimationEnd(animation: Animator) {
@@ -304,4 +304,3 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
     }
     enum class GalleryState { DASHBOARD, DETAIL }
 }
-
