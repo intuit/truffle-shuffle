@@ -2,6 +2,7 @@ package com.intuit.truffleshuffle
 
 import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DASHBOARD
 import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DETAIL
+import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
