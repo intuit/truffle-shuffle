@@ -53,7 +53,6 @@ repositories {
 }
 
 
-
 ext {
     bintrayRepo = 'Truffle-Shuffle'
     bintrayName = 'truffleshuffle'

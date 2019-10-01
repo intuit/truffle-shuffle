@@ -23,20 +23,20 @@ data class CardMeasurements(var yValue: Int = 0, var width: Int = 0, var height:
         val animatorSet = AnimatorSet()
         // change stack card y value, height and width
         val stackYAnimator = getValueAnimator(
-                start = yValue,
-                end = newY,
-                cardDimension = CardDimension.YVALUE,
-                view = view)
+            start = yValue,
+            end = newY,
+            cardDimension = CardDimension.YVALUE,
+            view = view)
         val stackHeightAnimator = getValueAnimator(
-                start = height,
-                end = newHeight,
-                cardDimension = CardDimension.HEIGHT,
-                view = view)
+            start = height,
+            end = newHeight,
+            cardDimension = CardDimension.HEIGHT,
+            view = view)
         val stackWidthAnimator = getValueAnimator(
-                start = width,
-                end = newWidth,
-                cardDimension = CardDimension.WIDTH,
-                view = view)
+            start = width,
+            end = newWidth,
+            cardDimension = CardDimension.WIDTH,
+            view = view)
         animatorSet.playTogether(stackYAnimator, stackHeightAnimator, stackWidthAnimator)
         return animatorSet
     }
@@ -69,5 +69,3 @@ data class CardMeasurements(var yValue: Int = 0, var width: Int = 0, var height:
      */
     enum class CardDimension { YVALUE, HEIGHT, WIDTH }
 }
-
-
