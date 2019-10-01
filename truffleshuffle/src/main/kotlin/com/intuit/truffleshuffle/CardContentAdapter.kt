@@ -6,7 +6,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
-import java.util.ArrayList
+import java.util.*
 
 /**
  * The adapter for mapping the array of card contents to the specific views in the card gallery
