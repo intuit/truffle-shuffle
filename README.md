@@ -31,7 +31,7 @@ To contribute to the project, make sure that the code committed matches this pro
 
 To reformat or check that your code is compliant, follow one of the options provided bellow:
 
-## Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
+### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
  - #### ktlint 
     use this command to check the formatting rules are covered
@@ -46,11 +46,11 @@ To reformat or check that your code is compliant, follow one of the options prov
  - #### ktlint --install-git-pre-commit-hook
     Install git hook to automatically check files for style violations on commit.    
 
-## Use Gradle tasks:
+### Use Gradle tasks:
 
- - ####./gradlew ktlint 
+ - #### ./gradlew ktlint 
     use this command to check the formatting rules are covered
- - ####./gradlew ktlintFormat 
+ - #### ./gradlew ktlintFormat 
     use this command to re-format code that is not compliant with this project's formatting rules.    
     
 # Using Truffle Shuffle
