@@ -27,6 +27,32 @@ You can play with the example by
 - Changing the number of cards in the array in getCardDetails() in app/src/main/kotlin/com/intuit/truffle/shuffle/MainActivity.kt
 - Changing the percentages of the view group in app/src/main/res/values/card_view_group_percentages.xml
 
+To contribute to the project, make sure that the code committed matches this project's formatting standards.
+
+To reformat or check that your code is compliant, follow one of the options provided bellow:
+
+## Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
+
+ - #### ktlint 
+    use this command to check the formatting rules are covered
+ - #### ktlint "src/**/*.kt" "!src/**/*Test.kt"
+    check only certain locations (prepend ! to negate the pattern)     
+ - #### ktlint -F
+    use this command to re-format code that is not compliant with this project's formatting rules.
+    (if some errors cannot be fixed automatically they will be printed to stderr) 
+ - #### ktlint -F "src/**/*.kt"
+    use this command to re-format certain locations (prepend ! to negate the pattern)  . 
+    (if some errors cannot be fixed automatically they will be printed to stderr)    
+ - #### ktlint --install-git-pre-commit-hook
+    Install git hook to automatically check files for style violations on commit.    
+
+## Use Gradle tasks:
+
+ - ####./gradlew ktlint 
+    use this command to check the formatting rules are covered
+ - ####./gradlew ktlintFormat 
+    use this command to re-format code that is not compliant with this project's formatting rules.    
+    
 # Using Truffle Shuffle
 
 To add this to your own Android application, complete the following steps:
