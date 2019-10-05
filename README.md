@@ -27,21 +27,21 @@ You can play with the example by
 - Changing the number of cards in the array in getCardDetails() in app/src/main/kotlin/com/intuit/truffle/shuffle/MainActivity.kt
 - Changing the percentages of the view group in app/src/main/res/values/card_view_group_percentages.xml
 
-To contribute to the project, make sure that the code committed matches this project's formatting standards.
+To contribute to this project, make sure that the code committed matches this project's formatting standards.
 
-To reformat or check that your code is compliant, follow one of the options provided bellow:
+To reformat or check that committed code is compliant, follow one of the following options:
 
 #### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
  - _ktlint_
-    <p> use this command to check the formatting rules are covered </p>
+    <p> Use this command to check the formatting rules are covered </p>
  - _ktlint "src/**/*.kt" "!src/**/*Test.kt"_
-    <p> check only certain locations (prepend ! to negate the pattern) </p>     
+    <p> Check only certain locations (prepend ! to negate the pattern) </p>     
  - _ktlint -F_
-    <p> use this command to re-format code that is not compliant with this project's formatting rules.
+    <p> Use this command to re-format code that is not compliant with this project's formatting rules.
     (if some errors cannot be fixed automatically they will be printed to stderr) </p> 
  - _ktlint -F "src/**/*.kt"_
-    <p> use this command to re-format certain locations (prepend ! to negate the pattern)  . 
+    <p> Use this command to re-format certain locations (prepend ! to negate the pattern)  . 
     (if some errors cannot be fixed automatically they will be printed to stderr) </p>    
  - _ktlint --install-git-pre-commit-hook_
     <p> Install git hook to automatically check files for style violations on commit. </p>    
@@ -49,9 +49,9 @@ To reformat or check that your code is compliant, follow one of the options prov
 #### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
 
  - _./gradlew ktlint_ 
-    <p> use this command to check the formatting rules are covered </p>
+    <p> Use this command to check the formatting rules are covered </p>
  - _/gradlew ktlintFormat_ 
-    <p> use this command to re-format code that is not compliant with this project's formatting rules. </p>    
+    <p> Use this command to re-format code that is not compliant with this project's formatting rules. </p>    
     
 # Using Truffle Shuffle
 
