@@ -33,17 +33,22 @@ To reformat or check that committed code is compliant, follow one of the followi
 
 #### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
- - _ktlint_
+ - ```javascript
+      ktlint ```
     <p> Use this command to check the formatting rules are covered </p>
- - _ktlint "src/**/*.kt" "!src/**/*Test.kt"_
+ - ```javascript
+      ktlint "src/**/*.kt" "!src/**/*Test.kt" ```
     <p> Check only certain locations (prepend ! to negate the pattern) </p>     
- - _ktlint -F_
+ - ```javascript
+      ktlint -F ```
     <p> Use this command to re-format code that is not compliant with this project's formatting rules.
     (if some errors cannot be fixed automatically they will be printed to stderr) </p> 
- - _ktlint -F "src/**/*.kt"_
+ - ```javascript 
+      ktlint -F "src/**/*.kt"```
     <p> Use this command to re-format certain locations (prepend ! to negate the pattern)  . 
     (if some errors cannot be fixed automatically they will be printed to stderr) </p>    
- - _ktlint --install-git-pre-commit-hook_
+ - ```javascript 
+      ktlint --install-git-pre-commit-hook```
     <p> Install git hook to automatically check files for style violations on commit. </p>    
 
 #### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
