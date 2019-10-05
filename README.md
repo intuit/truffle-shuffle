@@ -31,26 +31,26 @@ To contribute to the project, make sure that the code committed matches this pro
 
 To reformat or check that your code is compliant, follow one of the options provided bellow:
 
-### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
+#### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
- - #### ktlint 
+ - _ktlint_ 
     use this command to check the formatting rules are covered
- - #### ktlint "src/**/*.kt" "!src/**/*Test.kt"
+ - _ktlint "src/**/*.kt" "!src/**/*Test.kt"_
     check only certain locations (prepend ! to negate the pattern)     
- - #### ktlint -F
+ - _ktlint -F_
     use this command to re-format code that is not compliant with this project's formatting rules.
     (if some errors cannot be fixed automatically they will be printed to stderr) 
- - #### ktlint -F "src/**/*.kt"
+ - _ktlint -F "src/**/*.kt"_
     use this command to re-format certain locations (prepend ! to negate the pattern)  . 
     (if some errors cannot be fixed automatically they will be printed to stderr)    
- - #### ktlint --install-git-pre-commit-hook
+ - _ktlint --install-git-pre-commit-hook_
     Install git hook to automatically check files for style violations on commit.    
 
-### Use Gradle tasks:
+### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
 
- - #### ./gradlew ktlint 
+ - _./gradlew ktlint_ 
     use this command to check the formatting rules are covered
- - #### ./gradlew ktlintFormat 
+ - _/gradlew ktlintFormat_ 
     use this command to re-format code that is not compliant with this project's formatting rules.    
     
 # Using Truffle Shuffle
