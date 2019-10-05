@@ -46,7 +46,7 @@ To reformat or check that your code is compliant, follow one of the options prov
  - _ktlint --install-git-pre-commit-hook_
     <p> Install git hook to automatically check files for style violations on commit. </p>    
 
-### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
+#### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
 
  - _./gradlew ktlint_ 
     <p> use this command to check the formatting rules are covered </p>
