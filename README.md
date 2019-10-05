@@ -31,7 +31,7 @@ To contribute to this project, make sure that the code committed matches this pr
 
 To reformat or check that committed code is compliant, follow one of the following options:
 
-#### Use ktlint engine for code reformatting (recommended - [ktlint docs](https://ktlint.github.io/)):
+#### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
  - `ktlint`
     <p> Use this command to check the formatting rules are covered </p>
@@ -46,7 +46,7 @@ To reformat or check that committed code is compliant, follow one of the followi
  - `ktlint --install-git-pre-commit-hook`
     <p> Install git hook to automatically check files for style violations on commit. </p>    
 
-#### Use Gradle tasks for code reformatting ([ktlint docs](https://ktlint.github.io/)):
+#### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
 
  - `./gradlew ktlint` 
     <p> Use this command to check the formatting rules are covered </p>
