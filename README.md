@@ -33,29 +33,24 @@ To reformat or check that committed code is compliant, follow one of the followi
 
 #### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
- - ```javascript
-      ktlint ```
+ - `ktlint`
     <p> Use this command to check the formatting rules are covered </p>
- - ```javascript
-      ktlint "src/**/*.kt" "!src/**/*Test.kt" ```
+ - `ktlint "src/**/*.kt" "!src/**/*Test.kt"`
     <p> Check only certain locations (prepend ! to negate the pattern) </p>     
- - ```javascript
-      ktlint -F ```
+ - `ktlint -F`
     <p> Use this command to re-format code that is not compliant with this project's formatting rules.
     (if some errors cannot be fixed automatically they will be printed to stderr) </p> 
- - ```javascript 
-      ktlint -F "src/**/*.kt"```
+ - `ktlint -F "src/**/*.kt"`
     <p> Use this command to re-format certain locations (prepend ! to negate the pattern)  . 
     (if some errors cannot be fixed automatically they will be printed to stderr) </p>    
- - ```javascript 
-      ktlint --install-git-pre-commit-hook```
+ - `ktlint --install-git-pre-commit-hook`
     <p> Install git hook to automatically check files for style violations on commit. </p>    
 
 #### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
 
- - _./gradlew ktlint_ 
+ - `./gradlew ktlint` 
     <p> Use this command to check the formatting rules are covered </p>
- - _/gradlew ktlintFormat_ 
+ - `/gradlew ktlintFormat` 
     <p> Use this command to re-format code that is not compliant with this project's formatting rules. </p>    
     
 # Using Truffle Shuffle
