@@ -33,25 +33,25 @@ To reformat or check that your code is compliant, follow one of the options prov
 
 #### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
 
- - _ktlint_ 
-    use this command to check the formatting rules are covered
+ - _ktlint_
+    <p> use this command to check the formatting rules are covered </p>
  - _ktlint "src/**/*.kt" "!src/**/*Test.kt"_
-    check only certain locations (prepend ! to negate the pattern)     
+    <p> check only certain locations (prepend ! to negate the pattern) </p>     
  - _ktlint -F_
-    use this command to re-format code that is not compliant with this project's formatting rules.
-    (if some errors cannot be fixed automatically they will be printed to stderr) 
+    <p> use this command to re-format code that is not compliant with this project's formatting rules.
+    (if some errors cannot be fixed automatically they will be printed to stderr) </p> 
  - _ktlint -F "src/**/*.kt"_
-    use this command to re-format certain locations (prepend ! to negate the pattern)  . 
-    (if some errors cannot be fixed automatically they will be printed to stderr)    
+    <p> use this command to re-format certain locations (prepend ! to negate the pattern)  . 
+    (if some errors cannot be fixed automatically they will be printed to stderr) </p>    
  - _ktlint --install-git-pre-commit-hook_
-    Install git hook to automatically check files for style violations on commit.    
+    <p> Install git hook to automatically check files for style violations on commit. </p>    
 
 ### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
 
  - _./gradlew ktlint_ 
-    use this command to check the formatting rules are covered
+    <p> use this command to check the formatting rules are covered </p>
  - _/gradlew ktlintFormat_ 
-    use this command to re-format code that is not compliant with this project's formatting rules.    
+    <p> use this command to re-format code that is not compliant with this project's formatting rules. </p>    
     
 # Using Truffle Shuffle
 
