@@ -18,7 +18,7 @@ class AnimationDebouncerTest {
         val animationDebouncer = AnimationDebouncer()
         animationDebouncer.animate {
             assertFalse(animationDebouncer.isNotAnimating())
-         AnimatorSet()
+            AnimatorSet()
         }
     }
 
@@ -42,5 +42,4 @@ class AnimationDebouncerTest {
         }
         assertFalse(nestedAnimationHappened)
     }
-
 }

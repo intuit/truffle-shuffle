@@ -1,15 +1,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <com.intuit.truffleshuffle.CardViewGroup
-        android:id="@+id/card_gallery_percentage_view_group"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
-        custom:dashboardCardHeightPercentage="@integer/DashboardCardHeightPercentage"
-        custom:widthPercentage="@integer/WidthPercentage"
-        custom:topSpacingPercentage="@integer/TopSpacingPercentage"
-        custom:bottomSpacingPercentage="@integer/BottomSpacingPercentage"/>
+        android:layout_height="match_parent">
+
+    <com.intuit.truffleshuffle.CardViewGroup
+            android:id="@+id/card_gallery_percentage_view_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            custom:bottomSpacingPercentage="@integer/BottomSpacingPercentage"
+            custom:dashboardCardHeightPercentage="@integer/DashboardCardHeightPercentage"
+            custom:topSpacingPercentage="@integer/TopSpacingPercentage"
+            custom:widthPercentage="@integer/WidthPercentage" />
 
 </RelativeLayout>

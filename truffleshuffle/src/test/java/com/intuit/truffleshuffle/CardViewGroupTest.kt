@@ -1,5 +1,7 @@
 package com.intuit.truffleshuffle
 
+import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DASHBOARD
+import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DETAIL
 import com.nhaarman.mockitokotlin2.doReturn
 import com.nhaarman.mockitokotlin2.mock
 import org.junit.Assert.assertArrayEquals
@@ -8,8 +10,6 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
-import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DASHBOARD
-import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DETAIL
 
 /**
  *  Unit tests for Card Gallery Percentage View Group
@@ -49,7 +49,6 @@ class CardViewGroupTest {
         assertEquals(expectedCardMeasurements, cardMeasurements)
     }
 
-
     @Test
     fun getDetailCardMeasurementsTest() {
         val cardMeasurements = cardGroup.getDetailCardMeasurements()
@@ -69,14 +68,13 @@ class CardViewGroupTest {
         cardGroup.galleryState = DETAIL
         cardGroup.fillDashboardValues()
         val expectedCards = arrayOf(
-                com.intuit.truffleshuffle.CardMeasurements(85, 900, 1615),
-                com.intuit.truffleshuffle.CardMeasurements(1700, 765, 0),
-                com.intuit.truffleshuffle.CardMeasurements(1700, 810, 0),
-                com.intuit.truffleshuffle.CardMeasurements(1700, 855, 0),
-                com.intuit.truffleshuffle.CardMeasurements(1700, 900, 0)
+            com.intuit.truffleshuffle.CardMeasurements(85, 900, 1615),
+            com.intuit.truffleshuffle.CardMeasurements(1700, 765, 0),
+            com.intuit.truffleshuffle.CardMeasurements(1700, 810, 0),
+            com.intuit.truffleshuffle.CardMeasurements(1700, 855, 0),
+            com.intuit.truffleshuffle.CardMeasurements(1700, 900, 0)
         )
         assertArrayEquals(expectedCards, cardGroup.cards)
-
     }
 
     @Test
@@ -84,14 +82,13 @@ class CardViewGroupTest {
         cardGroup.galleryState = DASHBOARD
         cardGroup.fillDashboardValues()
         val expectedCards = arrayOf(
-                com.intuit.truffleshuffle.CardMeasurements(85, 900, 357),
-                com.intuit.truffleshuffle.CardMeasurements(442, 900, 357),
-                com.intuit.truffleshuffle.CardMeasurements(799, 900, 357),
-                com.intuit.truffleshuffle.CardMeasurements(1156, 900, 357),
-                com.intuit.truffleshuffle.CardMeasurements(1513, 900, 357)
+            com.intuit.truffleshuffle.CardMeasurements(85, 900, 357),
+            com.intuit.truffleshuffle.CardMeasurements(442, 900, 357),
+            com.intuit.truffleshuffle.CardMeasurements(799, 900, 357),
+            com.intuit.truffleshuffle.CardMeasurements(1156, 900, 357),
+            com.intuit.truffleshuffle.CardMeasurements(1513, 900, 357)
         )
         assertArrayEquals(expectedCards, cardGroup.cards)
-
     }
 
     @Test

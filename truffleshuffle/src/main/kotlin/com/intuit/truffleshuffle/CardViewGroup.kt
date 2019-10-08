@@ -43,19 +43,19 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
 
     init {
         val customAttributes = context.theme.obtainStyledAttributes(
-                attrs,
-                R.styleable.CardViewGroup,
-                0, 0)
+            attrs,
+            R.styleable.CardViewGroup,
+            0, 0)
         try {
             // Percentages to calculate card dimensions
             widthPercentage = customAttributes.getFloat(
-                    R.styleable.CardViewGroup_widthPercentage, 0.7f)
+                R.styleable.CardViewGroup_widthPercentage, 0.7f)
             dashboardCardHeightPercentage = customAttributes.getFloat(
-                    R.styleable.CardViewGroup_dashboardCardHeightPercentage, 0.17f)
+                R.styleable.CardViewGroup_dashboardCardHeightPercentage, 0.17f)
             topSpacingPercentage = customAttributes.getFloat(
-                    R.styleable.CardViewGroup_topSpacingPercentage, 0.07f)
+                R.styleable.CardViewGroup_topSpacingPercentage, 0.07f)
             bottomSpacingPercentage = customAttributes.getFloat(
-                    R.styleable.CardViewGroup_bottomSpacingPercentage, 0.07f)
+                R.styleable.CardViewGroup_bottomSpacingPercentage, 0.07f)
         } finally {
             customAttributes.recycle()
         }
@@ -76,11 +76,11 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
         cards.forEachIndexed { index, card ->
             getChildAt(index).apply {
                 measure(MeasureSpec.makeMeasureSpec(card.width, MeasureSpec.EXACTLY),
-                        MeasureSpec.makeMeasureSpec(card.height, MeasureSpec.EXACTLY))
+                    MeasureSpec.makeMeasureSpec(card.height, MeasureSpec.EXACTLY))
                 layout(getChildLeft(card.width),
-                        getChildTop(card),
-                        getChildRight(card),
-                        getChildBottom(card))
+                    getChildTop(card),
+                    getChildRight(card),
+                    getChildBottom(card))
             }
         }
     }
@@ -105,7 +105,7 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
         (state as Bundle?)?.apply {
             selectedCard = getInt("selectedCard")
             galleryState = GalleryState.valueOf(getString("dashboardState")
-                    ?: GalleryState.DETAIL.toString())
+                ?: GalleryState.DETAIL.toString())
             super.onRestoreInstanceState(getParcelable("superState"))
         }
     }
@@ -173,9 +173,9 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
             stackCardHeight
         }
         return CardMeasurements(
-                height = newHeight,
-                width = newWidthInStack,
-                yValue = currentTop
+            height = newHeight,
+            width = newWidthInStack,
+            yValue = currentTop
         )
     }
 
@@ -184,9 +184,9 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
      */
     fun getDetailCardMeasurements(): CardMeasurements {
         return CardMeasurements(
-                height = getDetailCardHeight(),
-                width = getChildWidth(),
-                yValue = this.paddingTop + getTopSpacing())
+            height = getDetailCardHeight(),
+            width = getChildWidth(),
+            yValue = this.paddingTop + getTopSpacing())
     }
 
     /**
@@ -194,9 +194,9 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
      */
     fun getDashboardCardMeasurements(currentTop: Int): CardMeasurements {
         return CardMeasurements(
-                height = getDashboardCardHeight(),
-                width = getChildWidth(),
-                yValue = currentTop)
+            height = getDashboardCardHeight(),
+            width = getChildWidth(),
+            yValue = currentTop)
     }
 
     /**
@@ -236,16 +236,16 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
             var stackTop = calculateStackTop()
             var stackPosition = cards.size - 2
 
-            cards.foldIndexed(animator){ index, acc, cardLayoutSpecs ->
+            cards.foldIndexed(animator) { index, acc, cardLayoutSpecs ->
                 val animation = if (index == selectedCard) {
                     cardLayoutSpecs.getTransitionAnimator(calculateTopOfCards(), getDetailCardHeight(), getChildWidth(), this)
                 } else {
                     val newHeight =
-                            if (isBottomOfStack(stackPosition)) {
-                                stackBottomHeight
-                            } else {
-                                stackCardHeight
-                            }
+                        if (isBottomOfStack(stackPosition)) {
+                            stackBottomHeight
+                        } else {
+                            stackCardHeight
+                        }
                     val newWidth = getChildWidth() - Math.round(stackPosition.toFloat() * 0.05f * getChildWidth().toFloat())
                     val currentStackTop = stackTop
                     stackTop += stackCardHeight + stackPadding
@@ -258,7 +258,7 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
         }
     }
 
-    private fun galleryStateAnimator(desiredGalleryState : GalleryState): AnimatorSet =
+    private fun galleryStateAnimator(desiredGalleryState: GalleryState): AnimatorSet =
         AnimatorSet().also {
             it.addListener(object : AnimatorListenerAdapter() {
                 override fun onAnimationEnd(animation: Animator) {
@@ -302,6 +302,6 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
         private const val DASHBOARD_CARD_BOTTOM_SPACING_PERCENTAGE_FIVE_CARD = 0.02f
         const val TRANSITION_ANIMATION_DURATION: Long = 200
     }
+
     enum class GalleryState { DASHBOARD, DETAIL }
 }
-
