@@ -31,7 +31,14 @@ To contribute to this project, make sure that the code committed matches this pr
 
 To reformat or check that committed code is compliant, follow one of the following options:
 
-#### Use ktlint engine (recommended - [ktlint docs](https://ktlint.github.io/)):
+#### Use Gradle tasks (recommended - [ktlint docs](https://ktlint.github.io/)):
+
+ - `./gradlew ktlint` 
+    <p> Use this command to check the formatting rules are covered </p>
+ - `/gradlew ktlintFormat` 
+    <p> Use this command to re-format code that is not compliant with this project's formatting rules. </p> 
+
+#### Use ktlint engine ([ktlint docs](https://ktlint.github.io/)):
 
  - `ktlint`
     <p> Use this command to check the formatting rules are covered </p>
@@ -44,14 +51,7 @@ To reformat or check that committed code is compliant, follow one of the followi
     <p> Use this command to re-format certain locations (prepend ! to negate the pattern)  . 
     (if some errors cannot be fixed automatically they will be printed to stderr) </p>    
  - `ktlint --install-git-pre-commit-hook`
-    <p> Install git hook to automatically check files for style violations on commit. </p>    
-
-#### Use Gradle tasks ([ktlint docs](https://ktlint.github.io/)):
-
- - `./gradlew ktlint` 
-    <p> Use this command to check the formatting rules are covered </p>
- - `/gradlew ktlintFormat` 
-    <p> Use this command to re-format code that is not compliant with this project's formatting rules. </p>    
+    <p> Install git hook to automatically check files for style violations on commit. </p>       
     
 # Using Truffle Shuffle
 
