@@ -1,6 +1,6 @@
 <div align="center">
-<img width="200"
-src=".github/Truffle Shuffle-logo.png">
+<img width="400"
+src=".github/truffleshuffle_logo_with_name.svg">
 </div>
 
 <div align="center"><a href="https://travis-ci.com/intuit/truffle-shuffle"><img src="https://travis-ci.com/intuit/truffle-shuffle.svg?token=DzNXw1x7X4t62Ts76we5&branch=master" alt="TravisCI Build Status" /></a>
