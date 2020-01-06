@@ -1,5 +1,5 @@
 <div align="center">
-<img width="200"
+<img width="400"
 src=".github/truffleshuffle_logo_with_name.svg">
 </div>
 
