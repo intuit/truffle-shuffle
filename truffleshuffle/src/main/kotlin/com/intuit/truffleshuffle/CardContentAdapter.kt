@@ -11,14 +11,18 @@ import java.util.ArrayList
 /**
  * The adapter for mapping the array of card contents to the specific views in the card gallery
  * Note that the array of contents is generic.
+ * If a separate dashboard layout is provided, it will be used when no cards are selected
  * Created by Katie Levy
  */
 abstract class CardContentAdapter<T : Any?>(
     private val cardContentArray: ArrayList<T>,
     mContext: Context,
-    private val layout: Int
+    private val layout: Int,
+    private val dashboardLayout: Int = layout
 ) : BaseAdapter() {
     private val layoutInflater: LayoutInflater = LayoutInflater.from(mContext)
+    private val separateLayoutProvided = (dashboardLayout != layout)
+    private var galleryState = CardViewGroup.GalleryState.DETAIL
 
     /**
      * Get the count of items in the adapter
@@ -59,7 +63,10 @@ abstract class CardContentAdapter<T : Any?>(
      * @return the view with the content filled into the view
      */
     override fun getView(position: Int, cardView: View?, parent: ViewGroup?): View {
-        val view = cardView ?: layoutInflater.inflate(layout, parent, false)
+        val view = when (galleryState) {
+            CardViewGroup.GalleryState.DETAIL -> cardView ?: layoutInflater.inflate(layout, parent, false)
+            CardViewGroup.GalleryState.DASHBOARD -> cardView ?: layoutInflater.inflate(dashboardLayout, parent, false)
+        }
         getViewContent(view, cardContentArray[position])
         return view
     }
@@ -70,6 +77,19 @@ abstract class CardContentAdapter<T : Any?>(
      * @param cardContent the data object of card content
      */
     abstract fun getViewContent(view: View, cardContent: T)
+
+    /**
+     * Toggle the layout on click if a dashboard layout was specified
+     * @param cardViewGroup the custom view group of all the cards
+     */
+    private fun toggleLayout(cardViewGroup: CardViewGroup) {
+        galleryState = when (cardViewGroup.galleryState) {
+            CardViewGroup.GalleryState.DETAIL -> CardViewGroup.GalleryState.DASHBOARD
+            CardViewGroup.GalleryState.DASHBOARD -> CardViewGroup.GalleryState.DETAIL
+        }
+        cardViewGroup.removeAllViews()
+        setupAdapter(cardViewGroup)
+    }
 
     /**
      * Setup the views inside the card view group with the data in the adapter
@@ -84,6 +104,7 @@ abstract class CardContentAdapter<T : Any?>(
                 return@OnTouchListener when (event.actionMasked) {
                     MotionEvent.ACTION_DOWN -> true
                     MotionEvent.ACTION_UP -> {
+                        if (separateLayoutProvided) toggleLayout(cardViewGroup)
                         cardViewGroup.click(view.tag as Int)
                         true
                     }
