@@ -74,6 +74,7 @@ repositories {
     - add the percentages you want to the custom attributes of the CardViewGroup in the xml file
         - custom:dashboardCardHeightPercentage, custom:widthPercentage, custom:topSpacingPercentage, custom:bottomSpacingPercentage
 3. Add an xml layout (card_layout.xml) for the contents of your cards similar to app/src/main/res/layout/card_layout.xml
+    - If you would like to display a separate layout when no cards are selected, include it here as well
 4. Create a folder cardGallery with 2 files:
     - CardContent similar to app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         - This is your data object for the card contents
@@ -82,6 +83,7 @@ repositories {
         - Override the getViewContent() function to set the data content in the cardContent to the views in your card_layout.xml, ie. setting the text in a textView
 5. In the Activity where you'll be using this UI component,
     - Instantiate a CustomizeAdapter you just defined and pass in an arrayList of CardContents and the resource id of inside the card ie. R.layout.card_layout
+        - If you are using a separate layout for dashboard view, include it as the optional fourth parameter
     - Call setupAdapter() on the CustomizeAdapter you just created with the CardViewGroup using findViewById()
 6. Now the TruffleShuffle UI component is ready to use!
 
