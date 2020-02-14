@@ -80,7 +80,7 @@ repositories {
     - CustomizeAdapter similar to app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CustomizeAdapter.kt
         - The constructor should take an ArrayList<CardContent> and should extend CardContentAdapter<CardContent>
         - Override the getViewContent() function to set the data content in the cardContent to the views in your card_layout.xml, ie. setting the text in a textView
-5. In the Activity where you'll be using this UI component,
+5. In the Activity where you'll be using this UI component:
     - Instantiate a CustomizeAdapter you just defined and pass in an arrayList of CardContents and the resource id of inside the card ie. R.layout.card_layout
     - Call setupAdapter() on the CustomizeAdapter you just created with the CardViewGroup using findViewById()
 6. Now the TruffleShuffle UI component is ready to use!
