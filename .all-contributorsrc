@@ -22,6 +22,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "abaer123",
+      "name": "Anthony Baer",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/22059145?v=4",
+      "profile": "https://github.com/abaer123",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
