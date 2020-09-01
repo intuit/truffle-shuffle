@@ -24,14 +24,41 @@
       ]
     },
     {
+      "login": "monicamiyasato",
+      "name": "monicamiyasato",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/56657880?v=4",
+      "profile": "https://github.com/monicamiyasato",
+      "contributions": [
+        "doc"
+       ]
+     },
+     {
+     "login": "cfsnsalazar",
+      "name": "cfsnsalazar",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/16261373?v=4",
+      "profile": "https://www.linkedin.com/in/napoleon-salazar-15744154/",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MathiasX1",
+      "name": "MathiasX1",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13027082?v=4",
+      "profile": "https://github.com/MathiasX1",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
       "login": "abaer123",
       "name": "Anthony Baer",
       "avatar_url": "https://avatars0.githubusercontent.com/u/22059145?v=4",
       "profile": "https://github.com/abaer123",
       "contributions": [
         "doc"
-      ]
-    }
+       ]
+     }
   ],
   "contributorsPerLine": 7,
   "projectName": "truffle-shuffle",
