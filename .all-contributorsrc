@@ -31,7 +31,16 @@
       "contributions": [
         "code"
       ]
-    }
+    },
+    {
+      "login": "monicamiyasato",
+      "name": "monicamiyasato",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/56657880?v=4",
+      "profile": "https://github.com/monicamiyasato",
+      "contributions": [
+        "doc"
+       ]
+     }
   ],
   "contributorsPerLine": 7,
   "projectName": "truffle-shuffle",
