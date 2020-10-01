@@ -30,10 +30,10 @@
       "profile": "https://github.com/monicamiyasato",
       "contributions": [
         "doc"
-       ]
-     },
-     {
-     "login": "cfsnsalazar",
+      ]
+    },
+    {
+      "login": "cfsnsalazar",
       "name": "cfsnsalazar",
       "avatar_url": "https://avatars0.githubusercontent.com/u/16261373?v=4",
       "profile": "https://www.linkedin.com/in/napoleon-salazar-15744154/",
@@ -57,8 +57,17 @@
       "profile": "https://github.com/abaer123",
       "contributions": [
         "doc"
-       ]
-     }
+      ]
+    },
+    {
+      "login": "adilanchian",
+      "name": "Alec Dilanchian",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/13204620?v=4",
+      "profile": "https://github.com/adilanchian",
+      "contributions": [
+        "code"
+      ]
+    }
   ],
   "contributorsPerLine": 7,
   "projectName": "truffle-shuffle",
