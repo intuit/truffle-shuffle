@@ -1,9 +1,11 @@
 package com.intuit.truffleshuffle
 
+import androidx.test.platform.app.InstrumentationRegistry.getInstrumentation
 import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DASHBOARD
 import com.intuit.truffleshuffle.CardViewGroup.GalleryState.DETAIL
-import com.nhaarman.mockitokotlin2.doReturn
-import com.nhaarman.mockitokotlin2.mock
+import io.mockk.every
+import io.mockk.mockk
+import io.mockk.spyk
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals
 import org.junit.Before
@@ -18,11 +20,15 @@ import org.robolectric.RobolectricTestRunner
 @RunWith(RobolectricTestRunner::class)
 class CardViewGroupTest {
 
-    private val cardGroup = mock<CardViewGroup> {
-        on { paddingTop } doReturn 0
-        on { measuredWidth } doReturn 1000
-        on { measuredHeight } doReturn 1700
-        on { animationDebouncer } doReturn AnimationDebouncer()
+    private val context = spyk(getInstrumentation().targetContext) {
+        every { resources } returns mockk(relaxed = true)
+    }
+
+    private val cardGroup = spyk(CardViewGroup(context)) {
+        every { paddingTop } returns 0
+        every { measuredWidth } returns 1000
+        every { measuredHeight } returns 1700
+        every { animationDebouncer } returns AnimationDebouncer()
     }
 
     @Before
