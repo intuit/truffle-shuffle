@@ -2,9 +2,8 @@ package com.intuit.truffleshuffle
 
 import android.content.Context
 import android.view.LayoutInflater
-import com.nhaarman.mockitokotlin2.doReturn
-import com.nhaarman.mockitokotlin2.mock
-import com.nhaarman.mockitokotlin2.whenever
+import io.mockk.every
+import io.mockk.mockk
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull
 import org.junit.Test
@@ -22,9 +21,9 @@ class CardContentAdapterTest {
         val cardContent = CardContent()
         val cardDetailsArray = arrayListOf(cardContent)
 
-        val mockContext = mock<Context>()
-        val mockLayoutInflater = mock<LayoutInflater>()
-        doReturn(mockLayoutInflater).whenever(mockContext).getSystemService(Context.LAYOUT_INFLATER_SERVICE)
+        val mockContext = mockk<Context>()
+        val mockLayoutInflater = mockk<LayoutInflater>()
+        every { mockContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE) } returns mockLayoutInflater
         val cardContentAdapter = CustomizeAdapter(cardDetailsArray, mockContext, 0)
 
         assertEquals(1, cardContentAdapter.count)
@@ -36,9 +35,9 @@ class CardContentAdapterTest {
     fun cardContentAdapterEmptyTest() {
         val cardDetailsArray = ArrayList<CardContent>()
 
-        val mockContext = mock<Context>()
-        val mockLayoutInflater = mock<LayoutInflater>()
-        doReturn(mockLayoutInflater).whenever(mockContext).getSystemService(Context.LAYOUT_INFLATER_SERVICE)
+        val mockContext = mockk<Context>()
+        val mockLayoutInflater = mockk<LayoutInflater>()
+        every { mockContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE) } returns mockLayoutInflater
         val cardContentAdapter = CustomizeAdapter(cardDetailsArray, mockContext, 0)
 
         assertEquals(0, cardContentAdapter.count)
