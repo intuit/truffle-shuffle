@@ -18,7 +18,6 @@ import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
-import kotlin.math.exp
 
 /**
  *  Unit tests for Card Content Adapter and Customize Adapter
@@ -31,7 +30,7 @@ class CardContentAdapterTest {
     lateinit var mockContext: Context
 
     @Before
-    fun setUp(){
+    fun setUp() {
         mockContext = mockLayoutInflater()
     }
 
@@ -68,7 +67,7 @@ class CardContentAdapterTest {
     }
 
     @Test
-    fun `on setupAdapter(), cards in cardContentArray should be added to the cardView passed in`(){
+    fun `on setupAdapter(), cards in cardContentArray should be added to the cardView passed in`() {
         val expectedCardView = mockCardView()
         val adapter = initCardContentAdapter(expectedCardView)
         val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
@@ -79,7 +78,7 @@ class CardContentAdapterTest {
     }
 
     @Test
-    fun `on setupAdapter(), cards in cardContentArray should setOnTouchListener`(){
+    fun `on setupAdapter(), cards in cardContentArray should setOnTouchListener`() {
         val expectedCardView = mockCardView()
         val adapter = initCardContentAdapter(expectedCardView)
         val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
@@ -90,12 +89,12 @@ class CardContentAdapterTest {
     }
 
     @Test
-    fun `on setupAdapter(), CardViewGroup should be clicked if MotionEvent ACTION_UP`(){
+    fun `on setupAdapter(), CardViewGroup should be clicked if MotionEvent ACTION_UP`() {
         val expectedCardView = mockCardView()
         val adapter = initCardContentAdapter(expectedCardView)
         val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
         adapter.setupAdapter(cardViewGroup)
-        verify{
+        verify {
             cardViewGroup.click(1)
         }
     }

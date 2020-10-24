@@ -18,7 +18,7 @@ import org.robolectric.annotation.Config
  *  Unit tests for Card Gallery Percentage View Group
  *  Created by Katie Levy
  */
-@Config(manifest=Config.NONE)
+@Config(manifest = Config.NONE)
 @RunWith(RobolectricTestRunner::class)
 class CardViewGroupTest {
 
