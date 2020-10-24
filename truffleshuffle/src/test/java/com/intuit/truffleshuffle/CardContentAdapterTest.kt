@@ -69,16 +69,8 @@ class CardContentAdapterTest {
 
     @Test
     fun `on setupAdapter(), cards in cardContentArray should be added to the cardView passed in`(){
-        val expectedCardView = mockk<View>(relaxed = true)
-        every { expectedCardView.tag = any() } just Runs
-        val content = ArrayList<CardContent>()
-        content.add(CardContent())
-        val adapter = spyk(CustomizeAdapter(content, mockContext, 0))
-        every {
-            adapter.getView(any(), any(), any())
-        } answers  {
-            expectedCardView
-        }
+        val expectedCardView = mockCardView()
+        val adapter = initCardContentAdapter(expectedCardView)
         val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
         adapter.setupAdapter(cardViewGroup)
         verify {
@@ -88,16 +80,8 @@ class CardContentAdapterTest {
 
     @Test
     fun `on setupAdapter(), cards in cardContentArray should setOnTouchListener`(){
-        val expectedCardView = mockk<View>(relaxed = true)
-        every { expectedCardView.tag = any() } just Runs
-        val content = ArrayList<CardContent>()
-        content.add(CardContent())
-        val adapter = spyk(CustomizeAdapter(content, mockContext, 0))
-        every {
-            adapter.getView(any(), any(), any())
-        } answers  {
-            expectedCardView
-        }
+        val expectedCardView = mockCardView()
+        val adapter = initCardContentAdapter(expectedCardView)
         val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
         adapter.setupAdapter(cardViewGroup)
         verify {
@@ -107,6 +91,28 @@ class CardContentAdapterTest {
 
     @Test
     fun `on setupAdapter(), CardViewGroup should be clicked if MotionEvent ACTION_UP`(){
+        val expectedCardView = mockCardView()
+        val adapter = initCardContentAdapter(expectedCardView)
+        val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
+        adapter.setupAdapter(cardViewGroup)
+        verify{
+            cardViewGroup.click(1)
+        }
+    }
+
+    private fun initCardContentAdapter(expectedCardView: View): CustomizeAdapter {
+        val content = ArrayList<CardContent>()
+        content.add(CardContent())
+        val adapter = spyk(CustomizeAdapter(content, mockContext, 0))
+        every {
+            adapter.getView(any(), any(), any())
+        } answers {
+            expectedCardView
+        }
+        return adapter
+    }
+
+    private fun mockCardView(): View {
         val expectedCardView = mockk<View>(relaxed = true)
         val callback = CapturingSlot<View.OnTouchListener>()
         val mockkEvent = mockk<MotionEvent>(relaxed = true)
@@ -122,19 +128,7 @@ class CardContentAdapterTest {
         every {
             expectedCardView.tag
         } returns 1
-        val content = ArrayList<CardContent>()
-        content.add(CardContent())
-        val adapter = spyk(CustomizeAdapter(content, mockContext, 0))
-        every {
-            adapter.getView(any(), any(), any())
-        } answers  {
-            expectedCardView
-        }
-        val cardViewGroup = mockk<CardViewGroup>(relaxed = true)
-        adapter.setupAdapter(cardViewGroup)
-        verify{
-            cardViewGroup.click(1)
-        }
+        return expectedCardView
     }
 
     private fun mockLayoutInflater(): Context {
