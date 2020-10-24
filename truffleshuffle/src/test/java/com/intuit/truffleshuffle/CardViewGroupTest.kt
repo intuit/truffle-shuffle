@@ -12,11 +12,13 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 /**
  *  Unit tests for Card Gallery Percentage View Group
  *  Created by Katie Levy
  */
+@Config(manifest = Config.NONE)
 @RunWith(RobolectricTestRunner::class)
 class CardViewGroupTest {
 
@@ -33,7 +35,7 @@ class CardViewGroupTest {
 
     @Before
     fun setup() {
-        cardGroup.cards = Array(5) { com.intuit.truffleshuffle.CardMeasurements() }
+        cardGroup.cards = Array(5) { CardMeasurements() }
         cardGroup.galleryState = DETAIL
         cardGroup.widthPercentage = 0.90.toFloat()
         cardGroup.bottomSpacingPercentage = 0.05.toFloat()
@@ -44,28 +46,28 @@ class CardViewGroupTest {
     @Test
     fun getStackCardMeasurementsTest() {
         val cardMeasurements = cardGroup.getStackCardMeasurements(1, 100)
-        val expectedCardMeasurements = com.intuit.truffleshuffle.CardMeasurements(100, 855, 0)
+        val expectedCardMeasurements = CardMeasurements(100, 855, 0)
         assertEquals(expectedCardMeasurements, cardMeasurements)
     }
 
     @Test
     fun getStackCardMeasurementsBottomTest() {
         val cardMeasurements = cardGroup.getStackCardMeasurements(0, 100)
-        val expectedCardMeasurements = com.intuit.truffleshuffle.CardMeasurements(100, 900, 0)
+        val expectedCardMeasurements = CardMeasurements(100, 900, 0)
         assertEquals(expectedCardMeasurements, cardMeasurements)
     }
 
     @Test
     fun getDetailCardMeasurementsTest() {
         val cardMeasurements = cardGroup.getDetailCardMeasurements()
-        val expectedCardMeasurements = com.intuit.truffleshuffle.CardMeasurements(85, 900, 1615)
+        val expectedCardMeasurements = CardMeasurements(85, 900, 1615)
         assertEquals(expectedCardMeasurements, cardMeasurements)
     }
 
     @Test
     fun getDashboardCardMeasurementsTest() {
         val cardMeasurements = cardGroup.getDashboardCardMeasurements(100)
-        val expectedCardMeasurements = com.intuit.truffleshuffle.CardMeasurements(100, 900, 357)
+        val expectedCardMeasurements = CardMeasurements(100, 900, 357)
         assertEquals(expectedCardMeasurements, cardMeasurements)
     }
 
@@ -74,11 +76,11 @@ class CardViewGroupTest {
         cardGroup.galleryState = DETAIL
         cardGroup.fillDashboardValues()
         val expectedCards = arrayOf(
-            com.intuit.truffleshuffle.CardMeasurements(85, 900, 1615),
-            com.intuit.truffleshuffle.CardMeasurements(1700, 765, 0),
-            com.intuit.truffleshuffle.CardMeasurements(1700, 810, 0),
-            com.intuit.truffleshuffle.CardMeasurements(1700, 855, 0),
-            com.intuit.truffleshuffle.CardMeasurements(1700, 900, 0)
+            CardMeasurements(85, 900, 1615),
+            CardMeasurements(1700, 765, 0),
+            CardMeasurements(1700, 810, 0),
+            CardMeasurements(1700, 855, 0),
+            CardMeasurements(1700, 900, 0)
         )
         assertArrayEquals(expectedCards, cardGroup.cards)
     }
@@ -88,11 +90,11 @@ class CardViewGroupTest {
         cardGroup.galleryState = DASHBOARD
         cardGroup.fillDashboardValues()
         val expectedCards = arrayOf(
-            com.intuit.truffleshuffle.CardMeasurements(85, 900, 357),
-            com.intuit.truffleshuffle.CardMeasurements(442, 900, 357),
-            com.intuit.truffleshuffle.CardMeasurements(799, 900, 357),
-            com.intuit.truffleshuffle.CardMeasurements(1156, 900, 357),
-            com.intuit.truffleshuffle.CardMeasurements(1513, 900, 357)
+            CardMeasurements(85, 900, 357),
+            CardMeasurements(442, 900, 357),
+            CardMeasurements(799, 900, 357),
+            CardMeasurements(1156, 900, 357),
+            CardMeasurements(1513, 900, 357)
         )
         assertArrayEquals(expectedCards, cardGroup.cards)
     }

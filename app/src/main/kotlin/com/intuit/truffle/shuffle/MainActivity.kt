@@ -1,8 +1,8 @@
 package com.intuit.truffle.shuffle
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.intuit.truffle.shuffle.cardGallery.CardContent
 import com.intuit.truffle.shuffle.cardGallery.CustomizeAdapter
 import com.intuit.truffleshuffle.CardViewGroup
