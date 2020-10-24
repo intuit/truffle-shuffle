@@ -99,26 +99,26 @@ class CardViewGroupTest {
         assertArrayEquals(expectedCards, cardGroup.cards)
     }
 
-//    @Test
-//    fun clickTest() {
-//        cardGroup.galleryState = DETAIL
-//        cardGroup.click(3)
-//        assertEquals(0, cardGroup.selectedCard)
-//    }
+    @Test
+    fun clickTest() {
+        cardGroup.galleryState = DETAIL
+        cardGroup.click(3)
+        assertEquals(0, cardGroup.selectedCard)
+    }
 
-//    @Test
-//    fun clickDashboardTest() {
-//        cardGroup.galleryState = DASHBOARD
-//        cardGroup.click(3)
-//        assertEquals(3, cardGroup.selectedCard)
-//    }
+    @Test
+    fun clickDashboardTest() {
+        cardGroup.galleryState = DASHBOARD
+        cardGroup.click(3)
+        assertEquals(3, cardGroup.selectedCard)
+    }
 
-//    @Test
-//    fun transitionToOneCardTest() {
-//        cardGroup.selectedCard = 0
-//        cardGroup.transitionDetailState(3)
-//        assertEquals(3, cardGroup.selectedCard)
-//    }
+    @Test
+    fun transitionToOneCardTest() {
+        cardGroup.selectedCard = 0
+        cardGroup.transitionDetailState(3)
+        assertEquals(3, cardGroup.selectedCard)
+    }
 
     @Test
     fun initMemoryTest() {
