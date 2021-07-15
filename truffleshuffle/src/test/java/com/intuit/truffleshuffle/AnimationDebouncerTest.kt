@@ -6,10 +6,12 @@ import org.junit.Assert.assertTrue
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 /**
  *  Unit tests for Animation Debouncer
  */
+@Config(manifest = Config.NONE)
 @RunWith(RobolectricTestRunner::class)
 class AnimationDebouncerTest {
 
