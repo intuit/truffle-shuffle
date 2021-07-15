@@ -14,9 +14,9 @@ Contributions should be made in the form of GitHub pull requests and will be rev
 
 ## Pull Request Checklist
 
-- Branch from the master branch and, if needed, rebase to the current master
+- Branch from the main branch and, if needed, rebase to the current main
   branch before submitting your pull request. If it doesn't merge cleanly with
-  master you may be asked to rebase your changes.
+  main you may be asked to rebase your changes.
 
 - Commits should be as small as possible, while ensuring that each commit is
   correct independently (i.e., each commit should compile and pass tests).
