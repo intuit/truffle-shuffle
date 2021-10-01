@@ -8,8 +8,8 @@ import android.os.Bundle
 import android.os.Parcelable
 import android.util.AttributeSet
 import android.view.ViewGroup
-import kotlin.math.roundToInt
 import kotlin.math.max
+import kotlin.math.roundToInt
 
 /**
  * Calculates the view group's children's dimensions based on defined percentage attributes
