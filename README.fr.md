@@ -68,7 +68,7 @@ Pour l'ajouter à votre propre application Android, procédez comme suit :
         implementation 'com.intuit.truffleshuffle:truffleshuffle:1.0.0'
     }
 
-Et assurez-vous que jcenter() est ajouté à votre application build.gradle
+Et assurez-vous que jcenter () est ajouté à votre application build.gradle
 
     repositories {
         jcenter()
@@ -95,7 +95,7 @@ Et assurez-vous que jcenter() est ajouté à votre application build.gradle
 -   Si tu**trouvé un bogue**, ouvrez un ticket et marquez comme`bug`.
 -   Si tu**avoir une demande de fonctionnalité**, ouvrez un ticket et marquez comme`feature`.
 -   Si tu**vouloir contribuer**, veuillez vous référer à la documentation de contribution et soumettre une demande d'extraction.
-    -   Afin de soumettre une pull request, veuillez forker ce repo et soumettre un PR à partir de votre repo forked.
+    -   In order to submit a pull request, please fork this repo and submit a PR from your forked repo.
     -   Ayez un message détaillé sur ce que votre RP corrige/améliore/ajoute.
     -   Chaque PR doit obtenir une approbation avant de fusionner.
 
