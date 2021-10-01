@@ -103,6 +103,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "KerinPithawala",
+      "name": "Kerin Pithawala",
+      "avatar_url": "https://avatars.githubusercontent.com/u/46436993?v=4",
+      "profile": "https://kerinpithawala.netlify.app/",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
