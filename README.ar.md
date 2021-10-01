@@ -9,7 +9,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Android UI مع رسوم متحركة ممتعة. يمكن تخصيص المعرض بسهولة وهو يعتمد على البيانات بناءً على عدد العناصر في المصفوفة والمحتوى الموجود داخل تلك الكائنات. يستخدم معرض البطاقات نظام Android ViewGroup المخصص مع سمات عرض مخصصة لتحديد حجم البطاقات الفردية كنسبة مئوية من حجم ViewGroup. يُستخدم معرض البطاقات هذا في تطبيق TurboTax للجوّال في تشكيلة المنتجات. Truffle Shuffle مكتوب بنسبة 100٪ بلغة Kotlin!
+Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون واجهة مستخدم Android مع رسوم متحركة ممتعة. يمكن تخصيص المعرض بسهولة وهو يعتمد على البيانات بناءً على عدد العناصر في المصفوفة والمحتوى الموجود داخل تلك الكائنات. يستخدم معرض البطاقات نظام Android ViewGroup المخصص مع سمات عرض مخصصة لتحديد حجم البطاقات الفردية كنسبة مئوية من حجم ViewGroup. يُستخدم معرض البطاقات هذا في تطبيق TurboTax للجوّال في تشكيلة المنتجات. Truffle Shuffle مكتوب بنسبة 100٪ بلغة Kotlin!
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -27,7 +27,7 @@ Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Androi
 يمكنك اللعب مع المثال من خلال
 
 -   تغيير التخطيط داخل البطاقات في app / src / main / res / layout / card_layout.xml
--   تغيير عدد البطاقات في المصفوفة في getCardDetails () في app / src / main / kotlin / com / intuit / truffle / shuffle / MainActivity.kt
+-   Changing the number of cards in the array in getCardDetails() in app/src/main/kotlin/com/intuit/truffle/shuffle/MainActivity.kt
 -   تغيير النسب المئوية لمجموعة العرض في app / src / main / res / القيم / card_view_group_percentages.xml
 
 للمساهمة في هذا المشروع ، تأكد من أن الكود الملتزم به يطابق معايير تنسيق هذا المشروع.
@@ -85,9 +85,9 @@ Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Androi
         -   يجب أن يأخذ المنشئ ArrayList<CardContent>ويجب أن يوسع CardContentAdapter<CardContent>
         -   تجاوز وظيفة getViewContent () لتعيين محتوى البيانات في CardContent إلى طرق العرض في card_layout.xml ، على سبيل المثال. ضبط النص في عرض النص
 5.  في النشاط حيث ستستخدم مكون واجهة المستخدم هذا:
-    -   قم بإنشاء CustomizeAdapter الذي قمت بتحديده للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة ie. R.layout.card_layout
+    -   قم بإنشاء CustomizeAdapter الذي قمت بتحديده للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
     -   استدعاء setupAdapter () على CustomizeAdapter الذي أنشأته للتو باستخدام CardViewGroup باستخدام findViewById ()
-6.  الآن مكون TruffleShuffle UI جاهز للاستخدام!
+6.  الآن عنصر TruffleShuffle UI جاهز للاستخدام!
 
 # التواصل والمساهمة
 
