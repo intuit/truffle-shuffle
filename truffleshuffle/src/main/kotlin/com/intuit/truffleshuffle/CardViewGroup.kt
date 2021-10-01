@@ -8,6 +8,8 @@ import android.os.Bundle
 import android.os.Parcelable
 import android.util.AttributeSet
 import android.view.ViewGroup
+import kotlin.math.max
+import kotlin.math.roundToInt
 
 /**
  * Calculates the view group's children's dimensions based on defined percentage attributes
@@ -165,7 +167,7 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
      * @return CardMeasurements with the y-value, width, and height
      */
     fun getStackCardMeasurements(stackPosition: Int, currentTop: Int): CardMeasurements {
-        val newWidthInStack = getChildWidth() - Math.round(stackPosition.toFloat() * 0.05f * getChildWidth().toFloat())
+        val newWidthInStack = getChildWidth() - (stackPosition.toFloat() * 0.05f * getChildWidth().toFloat()).roundToInt()
 
         val newHeight = if (isBottomOfStack(stackPosition)) {
             stackBottomHeight
@@ -246,7 +248,7 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
                         } else {
                             stackCardHeight
                         }
-                    val newWidth = getChildWidth() - Math.round(stackPosition.toFloat() * 0.05f * getChildWidth().toFloat())
+                    val newWidth = getChildWidth() - (stackPosition.toFloat() * 0.05f * getChildWidth().toFloat()).roundToInt()
                     val currentStackTop = stackTop
                     stackTop += stackCardHeight + stackPadding
                     stackPosition--
@@ -276,21 +278,21 @@ open class CardViewGroup @JvmOverloads constructor(context: Context, attrs: Attr
     private fun calculateStackTop() = calculateTopOfCards() + getDetailCardHeight() + spaceBelowDetailCardHeight
 
     private fun getDetailCardHeight() = getParentHeight() - getTopSpacing() - getBelowDetailCardHeight()
-    private fun getDashboardCardHeight() = Math.round(getParentHeight() * dashboardCardHeightPercentage)
+    private fun getDashboardCardHeight() = (getParentHeight() * dashboardCardHeightPercentage).roundToInt()
 
-    private fun getChildWidth() = Math.round(getParentWidth() * widthPercentage)
+    private fun getChildWidth() = (getParentWidth() * widthPercentage).roundToInt()
     private fun getParentHeight() = getParentBottom() - this.paddingTop
     private fun getParentBottom() = this.measuredHeight - this.paddingBottom
     private fun getParentWidth() = this.measuredWidth - this.paddingRight - this.paddingLeft
 
-    private fun getChildLeft(width: Int) = this.paddingLeft + Math.max(0, (getParentWidth() - width) / 2)
+    private fun getChildLeft(width: Int) = this.paddingLeft + max(0, (getParentWidth() - width) / 2)
     private fun getChildRight(cardLayoutSpec: CardMeasurements) = cardLayoutSpec.width + getChildLeft(cardLayoutSpec.width)
     private fun getChildBottom(cardLayoutSpec: CardMeasurements) = cardLayoutSpec.yValue + cardLayoutSpec.height
     private fun getChildTop(cardLayoutSpec: CardMeasurements) = cardLayoutSpec.yValue
     private fun getBelowDetailCardHeight() = ((stackPadding + stackCardHeight) * (childCount - 2)) + spaceBelowDetailCardHeight + stackBottomHeight
-    private fun getTopSpacing(): Int = Math.round(getParentHeight() * topSpacingPercentage)
-    private fun getBottomSpacing() = Math.round(getParentHeight() * bottomSpacingPercentage)
-    private fun getSpacingBetweenDashboardCardsHeight() = Math.max(0, Math.round((getParentHeight().toFloat() - getTopSpacing().toFloat() - getBottomSpacing().toFloat() - (getDashboardCardHeight() * childCount).toFloat()) / (childCount - 1)))
+    private fun getTopSpacing(): Int = (getParentHeight() * topSpacingPercentage).roundToInt()
+    private fun getBottomSpacing() = (getParentHeight() * bottomSpacingPercentage).roundToInt()
+    private fun getSpacingBetweenDashboardCardsHeight() = max(0, ((getParentHeight().toFloat() - getTopSpacing().toFloat() - getBottomSpacing().toFloat() - (getDashboardCardHeight() * childCount).toFloat()) / (childCount - 1)).roundToInt())
 
     private val stackPadding = resources.getDimension(R.dimen.card_stack_padding).toInt()
     private val stackBottomHeight = resources.getDimension(R.dimen.card_stack_bottom_height).toInt()
