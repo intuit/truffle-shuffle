@@ -112,6 +112,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "Rita-Okonkwo",
+      "name": "Okonkwo Rita",
+      "avatar_url": "https://avatars.githubusercontent.com/u/35587632?v=4",
+      "profile": "http://ritaokonkwo6@gmail.com",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
