@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/card_white_background_color"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardBackgroundColor="@color/card_white_background_color">
 
     <TextView
             android:id="@+id/txt_card_description"
@@ -14,4 +15,5 @@
             android:textColor="@color/txt_card_description_text_color"
             android:textSize="16sp" />
 
-</RelativeLayout>
+</androidx.cardview.widget.CardView>
+
