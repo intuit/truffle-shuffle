@@ -5,7 +5,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -95,7 +95,7 @@ Et assurez-vous que jcenter () est ajouté à votre application build.gradle
 -   Si tu**trouvé un bogue**, ouvrez un ticket et marquez comme`bug`.
 -   Si tu**avoir une demande de fonctionnalité**, ouvrez un ticket et marquez comme`feature`.
 -   Si tu**vouloir contribuer**, veuillez vous référer à la documentation de contribution et soumettre une demande d'extraction.
-    -   In order to submit a pull request, please fork this repo and submit a PR from your forked repo.
+    -   Afin de soumettre une pull request, veuillez forker ce repo et soumettre un PR à partir de votre repo forked.
     -   Ayez un message détaillé sur ce que votre RP corrige/améliore/ajoute.
     -   Chaque PR doit obtenir une approbation avant de fusionner.
 
@@ -124,6 +124,7 @@ Merci à ces gens merveilleux ([clé emoji](https://allcontributors.org/docs/en/
     <td align="center"><a href="https://github.com/henry398"><img src="https://avatars0.githubusercontent.com/u/28519908?v=4?s=100" width="100px;" alt=""/><br /><sub><b>henry398</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=henry398" title="Code">💻</a></td>
     <td align="center"><a href="https://linktr.ee/Sanchi_Rastogi"><img src="https://avatars.githubusercontent.com/u/46872971?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanchi Rastogi</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=sanchi0204" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
+    <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
   </tr>
 </table>
 
