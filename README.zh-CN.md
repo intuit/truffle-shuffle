@@ -5,7 +5,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-11-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -21,7 +21,7 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。图�
 </p>
 </div>
 
-# 快速开始
+# Quick Start
 
 要运行示例项目，请克隆 repo 并通过以下方式运行 Android 应用程序[安卓工作室](https://developer.android.com/studio/)在模拟器上。
 你可以玩这个例子
@@ -81,7 +81,7 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。图�
 4.  创建一个包含 2 个文件的文件夹 cardGallery：
     -   CardContent 类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         -   这是卡片内容的数据对象
-    -   自定义适配器类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CustomizeAdapter.kt
+    -   CustomizeAdapter similar to app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CustomizeAdapter.kt
         -   构造函数应该采用一个 ArrayList<CardContent>并且应该扩展 CardContentAdapter<CardContent>
         -   覆盖 getViewContent() 函数以将 cardContent 中的数据内容设置为 card_layout.xml 中的视图，即。在 textView 中设置文本
 5.  在您将使用此 UI 组件的 Activity 中：
@@ -124,6 +124,7 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。图�
     <td align="center"><a href="https://github.com/henry398"><img src="https://avatars0.githubusercontent.com/u/28519908?v=4?s=100" width="100px;" alt=""/><br /><sub><b>henry398</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=henry398" title="Code">💻</a></td>
     <td align="center"><a href="https://linktr.ee/Sanchi_Rastogi"><img src="https://avatars.githubusercontent.com/u/46872971?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanchi Rastogi</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=sanchi0204" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
+    <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
   </tr>
 </table>
 
