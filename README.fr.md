@@ -68,7 +68,7 @@ Pour l'ajouter à votre propre application Android, procédez comme suit :
         implementation 'com.intuit.truffleshuffle:truffleshuffle:1.0.0'
     }
 
-And make sure jcenter() is added to your app build.gradle
+Et assurez-vous que jcenter() est ajouté à votre application build.gradle
 
     repositories {
         jcenter()
