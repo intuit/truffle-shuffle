@@ -5,7 +5,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-12-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -97,7 +97,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 -   अगर तुम**योगदान देना चाहते हैं**, कृपया योगदान देने वाले दस्तावेज़ देखें और पुल अनुरोध सबमिट करें।
     -   पुल अनुरोध सबमिट करने के लिए, कृपया इस रेपो को फोर्क करें और अपने फोर्कड रेपो से पीआर सबमिट करें।
     -   आपका पीआर क्या सुधारता/बढ़ाता है/जोड़ता है, इस बारे में एक विस्तृत संदेश रखें।
-    -   हमारे विलय से पहले प्रत्येक पीआर को एक अनुमोदन प्राप्त करना होगा।
+    -   विलय करने से पहले प्रत्येक पीआर को एक अनुमोदन प्राप्त करना होगा।
 
 ## योगदानकर्ता
 
@@ -125,6 +125,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
     <td align="center"><a href="https://linktr.ee/Sanchi_Rastogi"><img src="https://avatars.githubusercontent.com/u/46872971?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sanchi Rastogi</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=sanchi0204" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
     <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
   </tr>
 </table>
 
