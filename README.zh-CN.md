@@ -5,11 +5,11 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle is an Android UI component card gallery library with a fun animation. The gallery is easily customizable and is data driven based on the number of objects in an array and the content inside of those objects. The card gallery uses a custom-made Android ViewGroup with custom view attributes to specify the size of the individual cards as a percentage of the ViewGroup's size. This card gallery is used on TurboTax's mobile app in the product lineup. Truffle Shuffle is written 100% in Kotlin!
+Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画廊很容易定制，并且是基于数组中的对象数量和这些对象内部的内容的数据驱动的。卡片库使用具有自定义视图属性的定制 Android ViewGroup 来指定单个卡片的大小，作为 ViewGroup 大小的百分比。该卡片库用于产品系列中的 TurboTax 移动应用程序。 Truffle Shuffle 100% 用 Kotlin 编写！
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -61,7 +61,7 @@ Truffle Shuffle is an Android UI component card gallery library with a fun anima
 
 要将其添加到您自己的 Android 应用程序中，请完成以下步骤：
 
-1.  将依赖添加到您项目的 build.gradle 文件中的依赖项下：
+1.  将依赖项添加到项目的 build.gradle 文件中的依赖项下：
 
 
     dependencies {
@@ -77,31 +77,31 @@ Truffle Shuffle is an Android UI component card gallery library with a fun anima
 2.  将 com.intuit.truffleshuffle.CardViewGroup 添加到您想要卡片库的 xml 文件中，例如 app/src/main/res/layout/activity_main.xml
     -   将你想要的百分比添加到 xml 文件中 CardViewGroup 的自定义属性中
         -   自定义：dashboardCardHeightPercentage，自定义：widthPercentage，自定义：topSpacingPercentage，自定义：bottomSpacingPercentage
-3.  为卡片的内容添加一个 xml 布局 (card_layout.xml)，类似于 app/src/main/res/layout/card_layout.xml
+3.  为类似于 app/src/main/res/layout/card_layout.xml 的卡片内容添加一个 xml 布局 (card_layout.xml)
 4.  创建一个包含 2 个文件的文件夹 cardGallery：
     -   CardContent 类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         -   这是卡片内容的数据对象
     -   自定义适配器类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CustomizeAdapter.kt
-        -   构造函数应该采用一个 ArrayList<CardContent>并且应该扩展 CardContentAdapter<CardContent>
+        -   构造函数应该采用一个 ArrayList<CardContent> and should extend CardContentAdapter<CardContent>
         -   覆盖 getViewContent() 函数以将 cardContent 中的数据内容设置为 card_layout.xml 中的视图，即。在 textView 中设置文本
 5.  在您将使用此 UI 组件的 Activity 中：
-    -   实例化您刚刚定义的 CustomizeAdapter 并传入 CardContents 的 arrayList 和卡片内部的资源 ID，即。 R.layout.card_layout
+    -   Instantiate a CustomizeAdapter you just defined and pass in an arrayList of CardContents and the resource id of inside the card ie. R.layout.card_layout
     -   使用 findViewById() 在您刚刚使用 CardViewGroup 创建的 CustomizeAdapter 上调用 setupAdapter()
 6.  现在 TruffleShuffle UI 组件可以使用了！
 
 # 沟通与贡献
 
--   If you **需要帮忙**，打开一个问题并标记为`help wanted`.
--   如果你**发现了一个错误**，打开一个问题并标记为`bug`.
+-   如果你**需要帮忙**，打开一个问题并标记为`help wanted`.
+-   如果你**发现一个错误**，打开一个问题并标记为`bug`.
 -   如果你**有一个功能请求**，打开一个问题并标记为`feature`.
--   如果你**想贡献**，请参阅贡献文档并提交拉取请求。
+-   If you **想贡献**，请参阅贡献文档并提交拉取请求。
     -   为了提交拉取请求，请 fork 这个 repo 并从你的 fork repo 提交 PR。
     -   详细说明您的 PR 修复/增强/添加的内容。
     -   在我们合并之前，每个 PR 都必须获得批准。
 
 ## 贡献者✨
 
-感谢这些优秀的人（[表情符号键](https://allcontributors.org/docs/en/emoji-key)):
+感谢这些优秀的人（[emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
@@ -126,6 +126,7 @@ Truffle Shuffle is an Android UI component card gallery library with a fun anima
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
     <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
     <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/amypritc"><img src="https://avatars.githubusercontent.com/u/20962408?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amy Rathore</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=amypritc" title="Code">💻</a></td>
   </tr>
 </table>
 
