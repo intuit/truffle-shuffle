@@ -85,7 +85,7 @@ Truffle Shuffle عبارة عن مكتبة لمعرض بطاقات مكون وا
         -   يجب أن يأخذ المنشئ ArrayList<CardContent>ويجب أن يوسع CardContentAdapter<CardContent>
         -   تجاوز وظيفة getViewContent () لتعيين محتوى البيانات في CardContent إلى طرق العرض في card_layout.xml ، على سبيل المثال. ضبط النص في عرض النص
 5.  في النشاط حيث ستستخدم مكون واجهة المستخدم هذا:
-    -   قم بإنشاء CustomizeAdapter الذي قمت بتحديده للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
+    -   قم بإنشاء CustomizeAdapter الذي حددته للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
     -   استدعاء setupAdapter () على CustomizeAdapter الذي أنشأته للتو باستخدام CardViewGroup باستخدام findViewById ()
 6.  الآن مكون TruffleShuffle UI جاهز للاستخدام!
 

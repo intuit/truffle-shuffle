@@ -57,7 +57,7 @@ Pour reformater ou vérifier que le code validé est conforme, suivez l'une des 
      <p> Install git hook to automatically check files for style violations on commit. </p>       
      
 
-# Utiliser Truffe Shuffle
+# Using Truffle Shuffle
 
 Pour l'ajouter à votre propre application Android, procédez comme suit :
 
@@ -93,8 +93,8 @@ Et assurez-vous que jcenter() est ajouté à votre application build.gradle
 
 -   Si tu**Besoin d'aide**, ouvrez un ticket et marquez comme`help wanted`.
 -   Si tu**trouvé un bogue**, ouvrez un ticket et marquez comme`bug`.
--   Si tu**avoir une demande de fonctionnalité**, ouvrez un ticket et marquez comme`feature`.
--   Si tu**vouloir contribuer**, veuillez vous référer à la documentation de contribution et soumettre une demande d'extraction.
+-   Si tu**avoir une demande de fonctionnalité**, open an issue and tag as `feature`.
+-   Si tu**vouloir contribuer**, please refer to the Contributing documentation and submit a pull request.
     -   Afin de soumettre une pull request, veuillez forker ce repo et soumettre un PR à partir de votre repo forked.
     -   Ayez un message détaillé sur ce que votre RP corrige/améliore/ajoute.
     -   Chaque PR doit obtenir une approbation avant de fusionner.

@@ -91,8 +91,8 @@ Truffle Shuffle is an Android UI component card gallery library with a fun anima
 
 # 沟通与贡献
 
--   如果你**需要帮忙**，打开一个问题并标记为`help wanted`.
--   如果你**发现一个错误**，打开一个问题并标记为`bug`.
+-   If you **需要帮忙**，打开一个问题并标记为`help wanted`.
+-   如果你**发现了一个错误**，打开一个问题并标记为`bug`.
 -   如果你**有一个功能请求**，打开一个问题并标记为`feature`.
 -   如果你**想贡献**，请参阅贡献文档并提交拉取请求。
     -   为了提交拉取请求，请 fork 这个 repo 并从你的 fork repo 提交 PR。

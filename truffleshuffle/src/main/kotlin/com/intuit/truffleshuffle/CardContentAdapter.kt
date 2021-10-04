@@ -84,6 +84,7 @@ abstract class CardContentAdapter<T : Any?>(
                 return@OnTouchListener when (event.actionMasked) {
                     MotionEvent.ACTION_DOWN -> true
                     MotionEvent.ACTION_UP -> {
+                        view.performClick()
                         cardViewGroup.click(view.tag as Int)
                         true
                     }
