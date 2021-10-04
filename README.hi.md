@@ -5,7 +5,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -24,7 +24,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 # जल्दी शुरू
 
 उदाहरण परियोजना को चलाने के लिए, रेपो को क्लोन करें और इसके माध्यम से Android एप्लिकेशन चलाएं[एंड्रॉइड स्टूडियो](https://developer.android.com/studio/)एक एमुलेटर पर।
-आप उदाहरण के साथ खेल सकते हैं
+आप द्वारा उदाहरण के साथ खेल सकते हैं
 
 -   ऐप/src/main/res/layout/card_layout.xml में कार्ड के अंदर लेआउट बदलना
 -   ऐप/src/main/kotlin/com/intuit/truffle/shuffle/MainActivity.kt में getCardDetails() में ऐरे में कार्ड्स की संख्या बदलना
@@ -95,13 +95,13 @@ src=".github/truffleshuffle_logo_with_name.svg">
 -   अगर तुम**एक बग मिला**, कोई समस्या खोलें और इस रूप में टैग करें`bug`.
 -   अगर तुम**एक सुविधा अनुरोध है**, कोई समस्या खोलें और इस रूप में टैग करें`feature`.
 -   अगर तुम**योगदान देना चाहते हैं**, कृपया योगदान देने वाले दस्तावेज़ देखें और पुल अनुरोध सबमिट करें।
-    -   पुल अनुरोध जमा करने के लिए, कृपया इस रेपो को फोर्क करें और अपने फोर्कड रेपो से एक पीआर जमा करें।
-    -   आपका पीआर क्या सुधारता/बढ़ाता है/जोड़ता है, इस बारे में एक विस्तृत संदेश रखें।
-    -   विलय करने से पहले प्रत्येक पीआर को एक अनुमोदन प्राप्त करना होगा।
+    -   पुल अनुरोध सबमिट करने के लिए, कृपया इस रेपो को फोर्क करें और अपने फोर्कड रेपो से पीआर सबमिट करें।
+    -   आपका पीआर क्या सुधारता/बढ़ाता है/जोड़ता है, इस बारे में एक विस्तृत संदेश प्राप्त करें।
+    -   हमारे विलय से पहले प्रत्येक पीआर को एक अनुमोदन प्राप्त करना होगा।
 
 ## योगदानकर्ता
 
-इन अद्भुत लोगों को धन्यवाद ([इमोजी कुंजी](https://allcontributors.org/docs/en/emoji-key)):
+इन अद्भुत लोगों को धन्यवाद ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
@@ -126,6 +126,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
     <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
     <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/amypritc"><img src="https://avatars.githubusercontent.com/u/20962408?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amy Rathore</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=amypritc" title="Code">💻</a></td>
   </tr>
 </table>
 
