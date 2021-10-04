@@ -9,7 +9,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画廊很容易定制，并且是基于数组中的对象数量和这些对象内部的内容的数据驱动的。卡片库使用具有自定义视图属性的定制 Android ViewGroup 来指定各个卡片的大小，作为 ViewGroup 大小的百分比。该卡片库用于产品系列中的 TurboTax 移动应用程序。 Truffle Shuffle 100% 用 Kotlin 编写！
+Truffle Shuffle is an Android UI component card gallery library with a fun animation. The gallery is easily customizable and is data driven based on the number of objects in an array and the content inside of those objects. The card gallery uses a custom-made Android ViewGroup with custom view attributes to specify the size of the individual cards as a percentage of the ViewGroup's size. This card gallery is used on TurboTax's mobile app in the product lineup. Truffle Shuffle is written 100% in Kotlin!
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -61,7 +61,7 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画�
 
 要将其添加到您自己的 Android 应用程序中，请完成以下步骤：
 
-1.  将依赖项添加到项目的 build.gradle 文件中的依赖项下：
+1.  将依赖添加到您项目的 build.gradle 文件中的依赖项下：
 
 
     dependencies {
@@ -77,7 +77,7 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画�
 2.  将 com.intuit.truffleshuffle.CardViewGroup 添加到您想要卡片库的 xml 文件中，例如 app/src/main/res/layout/activity_main.xml
     -   将你想要的百分比添加到 xml 文件中 CardViewGroup 的自定义属性中
         -   自定义：dashboardCardHeightPercentage，自定义：widthPercentage，自定义：topSpacingPercentage，自定义：bottomSpacingPercentage
-3.  为类似于 app/src/main/res/layout/card_layout.xml 的卡片内容添加一个 xml 布局 (card_layout.xml)
+3.  为卡片的内容添加一个 xml 布局 (card_layout.xml)，类似于 app/src/main/res/layout/card_layout.xml
 4.  创建一个包含 2 个文件的文件夹 cardGallery：
     -   CardContent 类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         -   这是卡片内容的数据对象
