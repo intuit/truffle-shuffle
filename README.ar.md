@@ -9,7 +9,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون واجهة مستخدم Android مع رسوم متحركة ممتعة. يمكن تخصيص المعرض بسهولة وهو يعتمد على البيانات بناءً على عدد العناصر في المصفوفة والمحتوى الموجود داخل تلك الكائنات. يستخدم معرض البطاقات نظام Android ViewGroup المخصص مع سمات عرض مخصصة لتحديد حجم البطاقات الفردية كنسبة مئوية من حجم ViewGroup. يُستخدم معرض البطاقات هذا في تطبيق TurboTax للجوّال في تشكيلة المنتجات. Truffle Shuffle مكتوب بنسبة 100٪ بلغة Kotlin!
+Truffle Shuffle is an Android UI component card gallery library with a fun animation. The gallery is easily customizable and is data driven based on the number of objects in an array and the content inside of those objects. The card gallery uses a custom-made Android ViewGroup with custom view attributes to specify the size of the individual cards as a percentage of the ViewGroup's size. This card gallery is used on TurboTax's mobile app in the product lineup. Truffle Shuffle is written 100% in Kotlin!
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -85,7 +85,7 @@ Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون واج
         -   يجب أن يأخذ المنشئ ArrayList<CardContent>ويجب أن يوسع CardContentAdapter<CardContent>
         -   تجاوز وظيفة getViewContent () لتعيين محتوى البيانات في CardContent إلى طرق العرض في card_layout.xml ، على سبيل المثال. ضبط النص في عرض النص
 5.  في النشاط حيث ستستخدم مكون واجهة المستخدم هذا:
-    -   قم بإنشاء CustomizeAdapter الذي قمت بتحديده للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
+    -   قم بإنشاء CustomizeAdapter الذي حددته للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
     -   استدعاء setupAdapter () على CustomizeAdapter الذي أنشأته للتو باستخدام CardViewGroup باستخدام findViewById ()
 6.  الآن عنصر TruffleShuffle UI جاهز للاستخدام!
 
