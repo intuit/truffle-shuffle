@@ -9,7 +9,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画廊很容易定制，并且是基于数组中的对象数量和这些对象内部的内容的数据驱动的。卡片库使用具有自定义视图属性的定制 Android ViewGroup 来指定单个卡片的大小，作为 ViewGroup 大小的百分比。该卡片库用于产品系列中的 TurboTax 移动应用程序。 Truffle Shuffle 100% 用 Kotlin 编写！
+Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画廊很容易定制，并且是基于数组中的对象数量和这些对象内部的内容的数据驱动的。卡片库使用具有自定义视图属性的定制 Android ViewGroup 来指定各个卡片的大小，作为 ViewGroup 大小的百分比。该卡片库用于产品系列中的 TurboTax 移动应用程序。 Truffle Shuffle 100% 用 Kotlin 编写！
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -82,10 +82,10 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画�
     -   CardContent 类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         -   这是卡片内容的数据对象
     -   自定义适配器类似于 app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CustomizeAdapter.kt
-        -   构造函数应该采用一个 ArrayList<CardContent> and should extend CardContentAdapter<CardContent>
+        -   构造函数应该采用一个 ArrayList<CardContent>并且应该扩展 CardContentAdapter<CardContent>
         -   覆盖 getViewContent() 函数以将 cardContent 中的数据内容设置为 card_layout.xml 中的视图，即。在 textView 中设置文本
 5.  在您将使用此 UI 组件的 Activity 中：
-    -   Instantiate a CustomizeAdapter you just defined and pass in an arrayList of CardContents and the resource id of inside the card ie. R.layout.card_layout
+    -   实例化您刚刚定义的 CustomizeAdapter 并传入 CardContents 的 arrayList 和卡片内部的资源 ID，即。 R.layout.card_layout
     -   使用 findViewById() 在您刚刚使用 CardViewGroup 创建的 CustomizeAdapter 上调用 setupAdapter()
 6.  现在 TruffleShuffle UI 组件可以使用了！
 
@@ -94,14 +94,14 @@ Truffle Shuffle 是一个带有有趣动画的 Android UI 组件卡库库。画�
 -   如果你**需要帮忙**，打开一个问题并标记为`help wanted`.
 -   如果你**发现一个错误**，打开一个问题并标记为`bug`.
 -   如果你**有一个功能请求**，打开一个问题并标记为`feature`.
--   If you **想贡献**，请参阅贡献文档并提交拉取请求。
+-   如果你**想贡献**，请参阅贡献文档并提交拉取请求。
     -   为了提交拉取请求，请 fork 这个 repo 并从你的 fork repo 提交 PR。
     -   详细说明您的 PR 修复/增强/添加的内容。
     -   在我们合并之前，每个 PR 都必须获得批准。
 
 ## 贡献者✨
 
-感谢这些优秀的人（[emoji key](https://allcontributors.org/docs/en/emoji-key)):
+感谢这些优秀的人（[表情符号键](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
