@@ -5,7 +5,7 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
@@ -57,7 +57,7 @@ Pour reformater ou vérifier que le code validé est conforme, suivez l'une des 
      <p> Install git hook to automatically check files for style violations on commit. </p>       
      
 
-# Using Truffle Shuffle
+# Utiliser Truffe Shuffle
 
 Pour l'ajouter à votre propre application Android, procédez comme suit :
 
@@ -68,7 +68,7 @@ Pour l'ajouter à votre propre application Android, procédez comme suit :
         implementation 'com.intuit.truffleshuffle:truffleshuffle:1.0.0'
     }
 
-Et assurez-vous que jcenter () est ajouté à votre application build.gradle
+Et assurez-vous que jcenter() est ajouté à votre application build.gradle
 
     repositories {
         jcenter()
@@ -93,8 +93,8 @@ Et assurez-vous que jcenter () est ajouté à votre application build.gradle
 
 -   Si tu**Besoin d'aide**, ouvrez un ticket et marquez comme`help wanted`.
 -   Si tu**trouvé un bogue**, ouvrez un ticket et marquez comme`bug`.
--   Si tu**avoir une demande de fonctionnalité**, open an issue and tag as `feature`.
--   Si tu**vouloir contribuer**, please refer to the Contributing documentation and submit a pull request.
+-   Si tu**avoir une demande de fonctionnalité**, ouvrez un ticket et marquez comme`feature`.
+-   Si tu**vouloir contribuer**, veuillez vous référer à la documentation de contribution et soumettre une demande d'extraction.
     -   Afin de soumettre une pull request, veuillez forker ce repo et soumettre un PR à partir de votre repo forked.
     -   Ayez un message détaillé sur ce que votre RP corrige/améliore/ajoute.
     -   Chaque PR doit obtenir une approbation avant de fusionner.
@@ -126,6 +126,7 @@ Merci à ces gens merveilleux ([clé emoji](https://allcontributors.org/docs/en/
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
     <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
     <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/amypritc"><img src="https://avatars.githubusercontent.com/u/20962408?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amy Rathore</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=amypritc" title="Code">💻</a></td>
   </tr>
 </table>
 

@@ -5,11 +5,11 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-13-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Android UI مع رسوم متحركة ممتعة. يمكن تخصيص المعرض بسهولة وهو يعتمد على البيانات بناءً على عدد العناصر في المصفوفة والمحتوى الموجود داخل تلك الكائنات. يستخدم معرض البطاقات نظام Android ViewGroup المخصص مع سمات عرض مخصصة لتحديد حجم البطاقات الفردية كنسبة مئوية من حجم ViewGroup. يُستخدم معرض البطاقات هذا في تطبيق TurboTax للجوّال في تشكيلة المنتجات. Truffle Shuffle مكتوب بنسبة 100٪ بلغة Kotlin!
+Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون واجهة مستخدم Android مع رسوم متحركة ممتعة. يمكن تخصيص المعرض بسهولة وهو يعتمد على البيانات بناءً على عدد العناصر في المصفوفة والمحتوى الموجود داخل تلك الكائنات. يستخدم معرض البطاقات نظام Android ViewGroup المخصص مع سمات عرض مخصصة لتحديد حجم البطاقات الفردية كنسبة مئوية من حجم ViewGroup. يُستخدم معرض البطاقات هذا في تطبيق TurboTax للجوّال في تشكيلة المنتجات. Truffle Shuffle مكتوب بنسبة 100٪ بلغة Kotlin!
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -85,9 +85,9 @@ Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Androi
         -   يجب أن يأخذ المنشئ ArrayList<CardContent>ويجب أن يوسع CardContentAdapter<CardContent>
         -   تجاوز وظيفة getViewContent () لتعيين محتوى البيانات في CardContent إلى طرق العرض في card_layout.xml ، على سبيل المثال. ضبط النص في عرض النص
 5.  في النشاط حيث ستستخدم مكون واجهة المستخدم هذا:
-    -   قم بإنشاء CustomizeAdapter الذي حددته للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
+    -   قم بإنشاء CustomizeAdapter الذي قمت بتحديده للتو وقم بتمرير قائمة صفيف لمحتويات البطاقة ومعرف المورد داخل البطاقة أي. R.layout.card_layout
     -   استدعاء setupAdapter () على CustomizeAdapter الذي أنشأته للتو باستخدام CardViewGroup باستخدام findViewById ()
-6.  الآن مكون TruffleShuffle UI جاهز للاستخدام!
+6.  الآن عنصر TruffleShuffle UI جاهز للاستخدام!
 
 # التواصل والمساهمة
 
@@ -126,6 +126,7 @@ Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Androi
     <td align="center"><a href="https://github.com/adrishyantee"><img src="https://avatars.githubusercontent.com/u/73780844?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Adrishyantee Maiti</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=adrishyantee" title="Code">💻</a></td>
     <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
     <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/amypritc"><img src="https://avatars.githubusercontent.com/u/20962408?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amy Rathore</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=amypritc" title="Code">💻</a></td>
   </tr>
 </table>
 
