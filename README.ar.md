@@ -5,11 +5,11 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle is an Android UI component card gallery library with a fun animation. The gallery is easily customizable and is data driven based on the number of objects in an array and the content inside of those objects. The card gallery uses a custom-made Android ViewGroup with custom view attributes to specify the size of the individual cards as a percentage of the ViewGroup's size. This card gallery is used on TurboTax's mobile app in the product lineup. Truffle Shuffle is written 100% in Kotlin!
+Truffle Shuffle عبارة عن مكتبة لمعرض بطاقة مكون Android UI مع رسوم متحركة ممتعة. يمكن تخصيص المعرض بسهولة وهو يعتمد على البيانات بناءً على عدد العناصر في المصفوفة والمحتوى الموجود داخل تلك الكائنات. يستخدم معرض البطاقات نظام Android ViewGroup المخصص مع سمات عرض مخصصة لتحديد حجم البطاقات الفردية كنسبة مئوية من حجم ViewGroup. يُستخدم معرض البطاقات هذا في تطبيق TurboTax للجوّال في تشكيلة المنتجات. Truffle Shuffle مكتوب بنسبة 100٪ بلغة Kotlin!
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -79,7 +79,7 @@ Truffle Shuffle is an Android UI component card gallery library with a fun anima
         -   custom: dashboardCardHeightPercentage ، مخصص: widthPercentage ، مخصص: topSpacingPercentage ، custom: bottomSpacingPercentage
 3.  أضف تنسيق xml (card_layout.xml) لمحتويات بطاقاتك المشابهة لـ app / src / main / res / layout / card_layout.xml
 4.  قم بإنشاء بطاقة مجلد معرض مع ملفين:
-    -   محتوى البطاقة مشابه لـ app / src / main / kotlin / com / intuit / truffle / shuffle / cardGallery / CardContent.kt
+    -   CardContent similar to app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         -   هذا هو كائن البيانات الخاص بك لمحتويات البطاقة
     -   CustomizeAdapter مشابه لـ app / src / main / kotlin / com / intuit / truffle / shuffle / cardGallery / CustomizeAdapter.kt
         -   يجب أن يأخذ المنشئ ArrayList<CardContent>ويجب أن يوسع CardContentAdapter<CardContent>
@@ -127,6 +127,9 @@ Truffle Shuffle is an Android UI component card gallery library with a fun anima
     <td align="center"><a href="https://kerinpithawala.netlify.app/"><img src="https://avatars.githubusercontent.com/u/46436993?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kerin Pithawala</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=KerinPithawala" title="Documentation">📖</a></td>
     <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/amypritc"><img src="https://avatars.githubusercontent.com/u/20962408?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amy Rathore</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=amypritc" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/Anusha05"><img src="https://avatars.githubusercontent.com/u/6751651?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anusha Bandekar</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Anusha05" title="Code">💻</a></td>
   </tr>
 </table>
 
