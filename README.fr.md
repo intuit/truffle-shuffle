@@ -5,11 +5,11 @@ src=".github/truffleshuffle_logo_with_name.svg">
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Truffle Shuffle est une bibliothèque de galerie de cartes de composants d'interface utilisateur Android avec une animation amusante. La galerie est facilement personnalisable et est basée sur les données en fonction du nombre d'objets dans un tableau et du contenu à l'intérieur de ces objets. La galerie de cartes utilise un ViewGroup Android personnalisé avec des attributs de vue personnalisés pour spécifier la taille des cartes individuelles en pourcentage de la taille du ViewGroup. Cette galerie de cartes est utilisée sur l'application mobile de TurboImpôt dans la gamme de produits. Truffle Shuffle est écrit à 100% en Kotlin !
+Truffle Shuffle est une bibliothèque de galeries de cartes de composants d'interface utilisateur Android avec une animation amusante. La galerie est facilement personnalisable et est pilotée par les données en fonction du nombre d'objets dans un tableau et du contenu à l'intérieur de ces objets. La galerie de cartes utilise un ViewGroup Android personnalisé avec des attributs de vue personnalisés pour spécifier la taille des cartes individuelles en pourcentage de la taille du ViewGroup. Cette galerie de cartes est utilisée sur l'application mobile d'ImpôtRapide dans la gamme de produits. Truffle Shuffle est écrit à 100% en Kotlin !
 
 <p align="center">
     <img src=".github/TurboTaxCards.gif" width="300" alt="TurboTax cards"/>
@@ -23,10 +23,10 @@ Truffle Shuffle est une bibliothèque de galerie de cartes de composants d'inter
 
 # Démarrage rapide
 
-Pour exécuter l'exemple de projet, clonez le référentiel et exécutez l'application Android via[Android Studio](https://developer.android.com/studio/)sur un émulateur.
+Pour exécuter l'exemple de projet, clonez le référentiel et exécutez l'application Android via[Studio Android](https://developer.android.com/studio/)sur un émulateur.
 Vous pouvez jouer avec l'exemple en
 
--   Modification de la mise en page à l'intérieur des cartes dans app/src/main/res/layout/card_layout.xml
+-   Modification de la disposition à l'intérieur des cartes dans app/src/main/res/layout/card_layout.xml
 -   Modification du nombre de cartes dans le tableau dans getCardDetails() dans app/src/main/kotlin/com/intuit/truffle/shuffle/MainActivity.kt
 -   Modification des pourcentages du groupe de vues dans app/src/main/res/values/card_view_group_percentages.xml
 
@@ -34,14 +34,14 @@ Pour contribuer à ce projet, assurez-vous que le code validé correspond aux no
 
 Pour reformater ou vérifier que le code validé est conforme, suivez l'une des options suivantes :
 
-#### Utilisez les tâches Gradle (recommandé -[ktlint docs](https://ktlint.github.io/)):
+#### Utiliser les tâches Gradle (recommandé -[docs ktlint](https://ktlint.github.io/)):
 
 -   `./gradlew ktlint`
      <p> Use this command to check the formatting rules are covered </p>
 -   `/gradlew ktlintFormat`
      <p> Use this command to re-format code that is not compliant with this project's formatting rules. </p> 
 
-#### Utiliser le moteur ktlint ([ktlint docs](https://ktlint.github.io/)):
+#### Utiliser le moteur ktlint ([docs ktlint](https://ktlint.github.io/)):
 
 -   `ktlint`
      <p> Use this command to check the formatting rules are covered </p>
@@ -57,7 +57,7 @@ Pour reformater ou vérifier que le code validé est conforme, suivez l'une des 
      <p> Install git hook to automatically check files for style violations on commit. </p>       
      
 
-# Utiliser Truffe Shuffle
+# Utilisation de Truffle Shuffle
 
 Pour l'ajouter à votre propre application Android, procédez comme suit :
 
@@ -76,32 +76,32 @@ Et assurez-vous que jcenter() est ajouté à votre application build.gradle
 
 2.  Ajoutez le com.intuit.truffleshuffle.CardViewGroup au fichier xml où vous voulez la galerie de cartes, comme dans app/src/main/res/layout/activity_main.xml
     -   ajoutez les pourcentages que vous souhaitez aux attributs personnalisés du CardViewGroup dans le fichier xml
-        -   personnalisé:dashboardCardHeightPercentage, personnalisé:widthPercentage, personnalisé:topSpacingPercentage, personnalisé:bottomSpacingPercentage
-3.  Ajoutez une mise en page XML (card_layout.xml) pour le contenu de vos cartes similaire à app/src/main/res/layout/card_layout.xml
-4.  Créez un dossier cardGallery avec 2 fichiers :
+        -   personnalisé:tableau de bordCardHeightPercentage, personnalisé:widthPercentage, personnalisé:topSpacingPercentage, personnalisé:bottomSpacingPercentage
+3.  Ajoutez une mise en page xml (card_layout.xml) pour le contenu de vos cartes similaire à app/src/main/res/layout/card_layout.xml
+4.  Créez un dossier cardGallery avec 2 fichiers :
     -   CardContent similaire à app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CardContent.kt
         -   Ceci est votre objet de données pour le contenu de la carte
     -   CustomizeAdapter similaire à app/src/main/kotlin/com/intuit/truffle/shuffle/cardGallery/CustomizeAdapter.kt
-        -   Le constructeur doit prendre un ArrayList<CardContent>et devrait étendre CardContentAdapter<CardContent>
+        -   Le constructeur doit prendre une ArrayList<CardContent>et devrait étendre CardContentAdapter<CardContent>
         -   Remplacez la fonction getViewContent() pour définir le contenu des données dans cardContent sur les vues de votre card_layout.xml, c'est-à-dire. définir le texte dans un textView
 5.  Dans l'activité où vous utiliserez ce composant d'interface utilisateur :
     -   Instanciez un CustomizeAdapter que vous venez de définir et transmettez un arrayList de CardContents et l'ID de ressource à l'intérieur de la carte, c'est-à-dire. R.layout.card_layout
-    -   Appelez setupAdapter() sur le CustomizeAdapter que vous venez de créer avec le CardViewGroup en utilisant findViewById()
+    -   Appelez setupAdapter() sur le CustomizeAdapter que vous venez de créer avec CardViewGroup en utilisant findViewById()
 6.  Le composant d'interface utilisateur TruffleShuffle est maintenant prêt à être utilisé !
 
 # Communication et contribution
 
--   Si tu**Besoin d'aide**, ouvrez un ticket et marquez comme`help wanted`.
--   Si tu**trouvé un bogue**, ouvrez un ticket et marquez comme`bug`.
--   Si tu**avoir une demande de fonctionnalité**, ouvrez un ticket et marquez comme`feature`.
--   Si tu**vouloir contribuer**, veuillez vous référer à la documentation de contribution et soumettre une demande d'extraction.
-    -   Afin de soumettre une pull request, veuillez forker ce repo et soumettre un PR à partir de votre repo forked.
-    -   Ayez un message détaillé sur ce que votre RP corrige/améliore/ajoute.
+-   Si vous**Besoin d'aide**, ouvrez un problème et marquez comme`help wanted`.
+-   Si vous**trouvé un bogue**, ouvrez un problème et marquez comme`bug`.
+-   Si vous**avoir une demande de fonctionnalité**, ouvrez un problème et marquez comme`feature`.
+-   Si vous**envie de contribuer**, veuillez vous référer à la documentation de contribution et soumettre une demande d'extraction.
+    -   Afin de soumettre une pull request, veuillez bifurquer ce référentiel et soumettre un PR à partir de votre référentiel bifurqué.
+    -   Ayez un message détaillé sur ce que votre PR corrige/améliore/ajoute.
     -   Chaque PR doit obtenir une approbation avant de fusionner.
 
 ## Contributeurs ✨
 
-Merci à ces gens merveilleux ([clé emoji](https://allcontributors.org/docs/en/emoji-key)):
+Merci à ces gens formidables ([clé emoji](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 
@@ -128,6 +128,9 @@ Merci à ces gens merveilleux ([clé emoji](https://allcontributors.org/docs/en/
     <td align="center"><a href="http://ritaokonkwo6@gmail.com"><img src="https://avatars.githubusercontent.com/u/35587632?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Okonkwo Rita</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Rita-Okonkwo" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/amypritc"><img src="https://avatars.githubusercontent.com/u/20962408?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Amy Rathore</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=amypritc" title="Code">💻</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/Anusha05"><img src="https://avatars.githubusercontent.com/u/6751651?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anusha Bandekar</b></sub></a><br /><a href="https://github.com/intuit/truffle-shuffle/commits?author=Anusha05" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
@@ -136,4 +139,4 @@ Merci à ces gens merveilleux ([clé emoji](https://allcontributors.org/docs/en/
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-Ce projet suit le[tous les contributeurs](https://github.com/all-contributors/all-contributors)spécification. Les contributions de toute nature sont les bienvenues !
+Ce projet fait suite à[tous les contributeurs](https://github.com/all-contributors/all-contributors)spécification. Les contributions de toute nature sont les bienvenues !
